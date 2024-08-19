@@ -1,0 +1,34 @@
+title = "OLR"
+# The URL the site will be built for
+base_url = "https://example.com"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+theme = "duckquill"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+
+primary_color="#0d78be"
+
+
+[extra.nav]
+# Display Atom/RSS feed button in the nav
+show_theme_switcher = true
+# Whether to use icons in the nav
+icons = true
+# Links used in the nav; any icon from https://icons.getbootstrap.com
+# can be used as the icon. The bi- prefix should not be added.
+links = [
+  {url = "/probleme", name = "Probleme"},
+]
+
+
