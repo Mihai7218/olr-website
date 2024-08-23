@@ -1,3 +1,5 @@
+default_language="ro"
+
 title = "OLR"
 # The URL the site will be built for
 base_url = "https://example.com"
@@ -15,7 +17,6 @@ theme = "duckquill"
 highlight_code = true
 
 [extra]
-
 primary_color="#0d78be"
 stylesheets=[
     "custom_style.css",
