@@ -1,0 +1,6 @@
+{%- set language_strings = load_data(path="i18n/" ~ lang ~ '.toml', required=false) -%}
+
+<li class = "announcement"> 
+    <div class="ann_date">{{ when | date(format=language_strings.date_format, locale=language_strings.date_locale) }}</div>
+    <div class="ann_content">{{ text }}</div>
+</li>
