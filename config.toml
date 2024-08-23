@@ -6,7 +6,6 @@ base_url = "https://example.com"
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
 
 theme = "duckquill"
 
@@ -18,13 +17,17 @@ highlight_code = true
 [extra]
 
 primary_color="#0d78be"
-
+stylesheets=[
+    "custom_style.css",
+]
 
 [extra.nav]
 # Display Atom/RSS feed button in the nav
 show_theme_switcher = true
 # Whether to use icons in the nav
 icons = true
+show_facebook = true
+fb_url = "https://www.facebook.com/olimpiadadelingvistica"
 # Links used in the nav; any icon from https://icons.getbootstrap.com
 # can be used as the icon. The bi- prefix should not be added.
 links = [
