@@ -1,6 +1,7 @@
+title = "Olimpiada de Lingvistică din România"
+=======
 default_language="ro"
 
-title = "OLR"
 # The URL the site will be built for
 base_url = "https://mihai7218.github.io/olr-website"
 
@@ -32,7 +33,7 @@ fb_url = "https://www.facebook.com/olimpiadadelingvistica"
 # Links used in the nav; any icon from https://icons.getbootstrap.com
 # can be used as the icon. The bi- prefix should not be added.
 links = [
-  {url = "/probleme", name = "Probleme"},
+  {url = "/resurse", name = "Resurse"},
 ]
 
 
