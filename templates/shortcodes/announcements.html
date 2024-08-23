@@ -1,0 +1,11 @@
+{%- set announcements = load_data(path="content/announcements.json") | sort(attribute="date") | reverse -%}
+{%- set language_strings = load_data(path="i18n/" ~ lang ~ '.toml', required=false) -%}
+
+<ul class="announcements">
+    {% for announcement in announcements %}
+        <li class = "announcement"> 
+            <div class="ann_date">{{ announcement.date | date(format=language_strings.date_format, locale=language_strings.date_locale) }}</div>
+            <div class="ann_content">{{ announcement.text }}</div>
+        </li>
+    {% endfor %}
+</ul>
