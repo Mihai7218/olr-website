@@ -1,4 +1,4 @@
-title = "OLR"
+title = "Olimpiada de Lingvistică din România"
 # The URL the site will be built for
 base_url = "https://example.com"
 
@@ -28,7 +28,7 @@ icons = true
 # Links used in the nav; any icon from https://icons.getbootstrap.com
 # can be used as the icon. The bi- prefix should not be added.
 links = [
-  {url = "/probleme", name = "Probleme"},
+  {url = "/resurse", name = "Resurse"},
 ]
 
 
