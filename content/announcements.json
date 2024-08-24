@@ -5,6 +5,6 @@
     },
     {
         "date": "2023-09-30",
-        "text": "anunț 1"
+        "text": "Exemplu Markdown: *italic*, \\*escaped\\*, **bold** \\*\\*escaped\\*\\*, $mark$, \\$escaped\\$, [link](about:blank)"
     }
 ]

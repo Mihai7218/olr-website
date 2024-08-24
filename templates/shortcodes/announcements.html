@@ -5,7 +5,13 @@
     {% for announcement in announcements %}
         <li class = "announcement"> 
             <div class="ann_date">{{ announcement.date | date(format=language_strings.date_format, locale=language_strings.date_locale) }}</div>
-            <div class="ann_content">{{ announcement.text }}</div>
+            <div class="ann_content">{{ announcement.text 
+                | striptags 
+                | escape 
+                | regex_replace(pattern="\$(.*?)\$", rep="<mark>$1</mark>") 
+                | regex_replace(pattern="\\<mark>(.*?)\\</mark>", rep="$$$1$$")
+                | markdown 
+                | safe }}</div>
         </li>
     {% endfor %}
 </ul>

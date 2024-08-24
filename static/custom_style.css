@@ -1,19 +1,33 @@
 .announcements  {
-    font-size: 20px;
     list-style-type: none;
+    
+    padding: 15px;
+
+    background-color: var(--fg-muted-2);
+    box-shadow: var(--edge-highlight);
+    border-radius: var(--rounded-corner);
+    border-collapse: collapse;
+    overflow: hidden;
 }
 
 .announcement {
     display: grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 16% auto;
     gap: 0 15px;
 }
 
 .ann_content {
     grid-column: 2 3;
+    font-size: 1.5rem;
+
+    p {
+        margin: 0;
+    }
 }
 
 .ann_date {
+    padding-top: 4px;
+    font-size: 1.25em;
     grid-column: 1 2;
     text-align: right;
     color: var(--fg-muted-5);
