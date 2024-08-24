@@ -1,0 +1,22 @@
+.announcements  {
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.announcement {
+    display: grid;
+    grid-template-columns: 200px auto;
+    gap: 0 15px;
+}
+
+.ann_content {
+    grid-column: 2 3;
+}
+
+.ann_date {
+    grid-column: 1 2;
+    text-align: right;
+    color: var(--fg-muted-5);
+    font-weight: 500;
+    font-family: var(--font-antique);
+}
