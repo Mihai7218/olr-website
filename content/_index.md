@@ -2,6 +2,8 @@
 title = "Acasă"
 +++
 
-# Home
+# Logo + Titlu
 
-Test :)
+# Anunțuri
+
+{{ announcements() }}
