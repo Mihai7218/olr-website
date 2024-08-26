@@ -1,6 +1,6 @@
 language_name="Română"
 
-date_format="%d %B %Y"
+date_format="%-d %B %Y"
 date_locale="ro_RO"
 
 home="Acasă"
