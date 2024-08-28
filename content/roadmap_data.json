@@ -1,0 +1,26 @@
+[
+    {
+        "type": "signup",
+        "name": "Eveniment 1",
+        "date": "2530-11-01",
+        "date_end": "2530-11-15"
+    },
+    {
+        "type": "contest",
+        "name": "Eveniment 2",
+        "date": "2530-12-08",
+        "date_end": ""
+    },
+    {
+        "type": "results",
+        "name": "Eveniment 3",
+        "date": "2531-02-08",
+        "date_end": ""
+    },
+    {
+        "type": "lot",
+        "name": "Eveniment 4",
+        "date": "2531-07-15",
+        "date_end": "2531-07-22"
+    }
+]

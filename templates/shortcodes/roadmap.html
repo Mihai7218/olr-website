@@ -1,0 +1,32 @@
+{%- set roadmap_data = load_data(path="content/roadmap_data.json") | sort(attribute="date") -%}
+{%- set language_strings = load_data(path="i18n/" ~ lang ~ '.toml', required=false) -%}
+
+<div class="roadmap">
+    {% for event in roadmap_data %}
+        <div class="roadmap-el">
+            {% set img_src = "/roadmap/unknown.svg" %}
+            {% if event.type == "signup" %}
+                {% set img_src = "/roadmap/signup.svg"%}
+            {% endif %}
+            {% if event.type == "contest" %}
+                {% set img_src = "/roadmap/contest.svg"%}
+            {% endif %}
+            {% if event.type == "results" %}
+                {% set img_src = "/roadmap/results.svg"%}
+            {% endif %}
+            <div class = "roadmap-img-div {{img_src | replace(from="/roadmap/", to="") | replace(from=".svg", to="")}}">
+                <img class="roadmap-img no-hover transparent" src="{{ img_src }}">
+            </div>
+            <div class="roadmap-title">{{ event.name }}</div>
+            {%if event.date_end == ""%}
+            <div class="roadmap-date">{{ event.date | date(format=language_strings.date_format, locale=language_strings.date_locale) }}</div>
+            {%endif%}
+            {%if event.date_end != ""%}
+            <div class="roadmap-date">{{ event.date | date(format=language_strings.date_format, locale=language_strings.date_locale) }} - {{ event.date_end | date(format=language_strings.date_format, locale=language_strings.date_locale) }}</div>
+            {%endif%}
+        </div>
+        {%if event != roadmap_data | last%}
+        <img class="roadmap-arrow no-hover transparent" src="/roadmap/arrow.svg">
+        {%endif%}
+    {% endfor %}
+</div>

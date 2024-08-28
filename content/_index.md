@@ -7,3 +7,7 @@ title = "Acasă"
 # Anunțuri
 
 {{ announcements() }}
+
+# Calendar
+
+{{ roadmap() }}
