@@ -3,15 +3,19 @@ title = "Resurse"
 date=2024-08-19
 +++
 
-## Probleme din anii anteriori
+# Ediții anterioare ale Olimpiadei de Lingvistică din România
+
+{{ resurse() }}
+
+# Tabel resurse
 
 | Ediție    | Etapă     | Exercițiu A | Exercițiu B | Performanță |
 | :-------: | :-------: | :---------: | :---------: | :---------: |
-| 2023-2024 | Națională | {{ newtab_link(text="subiecte", url="/subiecte/ONL2024_Subiecte_ExA.pdf") }} · soluții | {{ newtab_link(text="subiecte", url="/subiecte/ONL2024_Subiecte_ExB.pdf") }} · soluții | {{ newtab_link(text="subiecte", url="/subiecte/ONL2024_Subiecte_Perf.pdf") }} · soluții |
-|           | Județeană | {{ newtab_link(text="subiecte", url="/subiecte/OJL2024_Subiecte_ExA.pdf") }} · soluții | {{ newtab_link(text="subiecte", url="/subiecte/OJL2024_Subiecte_ExB.pdf") }} · soluții | {{ newtab_link(text="subiecte", url="/subiecte/OJL2024_Subiecte_Perf.pdf") }} · soluții |
-| 2022-2023 | Națională | {{ newtab_link(text="subiecte", url="/subiecte/ONL2023_Subiecte_ExA.pdf") }} · soluții | {{ newtab_link(text="subiecte", url="/subiecte/ONL2023_Subiecte_ExB.pdf") }} · soluții | {{ newtab_link(text="subiecte", url="/subiecte/ONL2023_Subiecte_Perf.pdf") }} · soluții 
-|           | Județeană | {{ newtab_link(text="subiecte", url="/subiecte/OJL2023_Subiecte_ExA.pdf") }} · soluții | {{ newtab_link(text="subiecte", url="/subiecte/OJL2023_Subiecte_ExB.pdf") }} · soluții | {{ newtab_link(text="subiecte", url="/subiecte/OJL2023_Subiecte_Perf.pdf") }} · soluții |
-| 2021-2022 | Națională | {{ newtab_link(text="subiecte", url="/subiecte/ONL2022_Subiecte_ExA.pdf") }} · {{ newtab_link(text="soluții", url="/subiecte/ONL2022_Soluții_ExA.pdf") }} | {{ newtab_link(text="subiecte", url="/subiecte/ONL2022_Subiecte_ExB.pdf") }} · {{ newtab_link(text="soluții", url="/subiecte/ONL2022_Soluții_ExB.pdf") }} | {{ newtab_link(text="subiecte", url="/subiecte/ONL2022_Subiecte_Perf.pdf") }} · {{ newtab_link(text="soluții", url="/subiecte/ONL2022_Soluții_Perf.pdf") }} |
+| 2023-2024 | Națională | [subiecte](/subiecte/ONL2024_Subiecte_ExA.pdf) · soluții | [subiecte](/subiecte/ONL2024_Subiecte_ExB.pdf) · soluții | [subiecte](/subiecte/ONL2024_Subiecte_Perf.pdf) · soluții |
+|           | Județeană | [subiecte](/subiecte/OJL2024_Subiecte_ExA.pdf) · soluții | [subiecte](/subiecte/OJL2024_Subiecte_ExB.pdf) · soluții | [subiecte](/subiecte/OJL2024_Subiecte_Perf.pdf) · soluții |
+| 2022-2023 | Națională | [subiecte](/subiecte/ONL2023_Subiecte_ExA.pdf) · soluții | [subiecte](/subiecte/ONL2023_Subiecte_ExB.pdf) · soluții | [subiecte](/subiecte/ONL2023_Subiecte_Perf.pdf) · soluții |
+|           | Județeană | [subiecte](/subiecte/OJL2023_Subiecte_ExA.pdf) · soluții | [subiecte](/subiecte/OJL2023_Subiecte_ExB.pdf) · soluții | [subiecte](/subiecte/OJL2023_Subiecte_Perf.pdf) · soluții |
+| 2021-2022 | Națională | [subiecte](/subiecte/ONL2022_Subiecte_ExA.pdf) · [soluții](/subiecte/ONL2022_Soluții_ExA.pdf) | [subiecte](/subiecte/ONL2022_Subiecte_ExB.pdf) · [soluții](/subiecte/ONL2022_Soluții_ExB.pdf) | [subiecte](/subiecte/ONL2022_Subiecte_Perf.pdf) · [soluții](/subiecte/ONL2022_Soluții_Perf.pdf) |
 | 2020-2021 | Concursul Online de Lingvistică | [probleme](https://drive.google.com/file/d/1BbhbDqi55G24xZoUJTLcy6j1FTAVCGB-/view) · [soluții](https://drive.google.com/file/d/1xo6fPJxtuQOprCKJVWTaHBGnTKN-OWMH/view?usp=drive_link) | [probleme](https://drive.google.com/file/d/1bX4aDrWwvfI11umehVhls87h6bsurOq2/view) · [soluții](https://drive.google.com/file/d/1Vmw5CE2eBYrwRvyeaoOEuqwbt-XsXzLs/view)              | [probleme](https://drive.google.com/file/d/1QRJoRwIEOunfl7nfvZZsJPE4vWssD2Vg/view) · [soluții](https://drive.google.com/file/d/1CpawNYjEyvwd4bU0ASgNJxu0WNE64OZj/view) |
 | 2019-2020 | Concursul Online de Lingvistică | | [probleme](https://drive.google.com/file/d/1irNaMvXpusoOZ7CKTefzqE1EJWuhzb5u/view) · [soluții](https://drive.google.com/file/d/1vjuL1Dmp-7o03qR642DYFMPs4QAMBTRI/view) (toate secțiunile) | |
 |           | Județeană | [probleme](https://drive.google.com/file/d/1Wx86Qb_lj_ZVixSJxGK2hclnTFRNeFA_/view) · [soluții](https://drive.google.com/file/d/1KrIFliIS5vSsj_zFAnfZawHl99HUuynj/view)                | [probleme](https://drive.google.com/file/d/1mQ3is2j3TJOgK5ZdU9WgHFDFsgEV2_S_/view) · [soluții](https://drive.google.com/file/d/1URfK_MCFUgoqrguF6YHOoD-L-gP0lqpI/view)              | [probleme](https://drive.google.com/file/d/1AS0ROMkH_srUkJhDVU18Ilzat48j9qIE/view) · [soluții](https://drive.google.com/file/d/1-kSnnaJsRb6VfwTetETYBzHvkNpBBWOy/view) |
