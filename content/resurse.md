@@ -3,7 +3,11 @@ title = "Resurse"
 date=2024-08-19
 +++
 
-## Probleme din anii anteriori
+# Ediții anterioare ale Olimpiadei de Lingvistică din România
+
+{{ resurse() }}
+
+# Tabel resurse
 
 | Ediție    | Etapă     | Exercițiu A | Exercițiu B | Performanță |
 | :-------: | :-------: | :---------: | :---------: | :---------: |
