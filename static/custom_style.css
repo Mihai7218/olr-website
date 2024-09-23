@@ -43,7 +43,7 @@
 .roadmap {
     display: flex;
     flex-direction: row;
-    overflow: scroll;
+    overflow-x: auto;
     flex-wrap: nowrap;
     justify-content: flex-start;
     
@@ -53,6 +53,8 @@
     border-collapse: collapse;
 
     padding: 50px 30px;
+
+    width: min(90vw, var(--container-width));
 
     div {
         width: max-content;
