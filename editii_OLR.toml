@@ -1,0 +1,383 @@
+[[edition]]
+name = "Ediția 2023-2024"
+year = 2024
+
+[[edition.event]]
+type = "Etapa Județeană"
+date_start = 2024-02-24
+date_end = 2024-02-24
+
+[[edition.event.category]]
+type = "Exercițiu A"
+problems = "/subiecte/OJL2024_Subiecte_ExA.pdf"
+#solutions = "/subiecte/OJL2024_Soluții_ExA.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu B"
+problems = "/subiecte/OJL2024_Subiecte_ExB.pdf"
+#solutions = "/subiecte/OJL2024_Soluții_ExB.pdf"
+
+[[edition.event.category]]
+type = "Performanță"
+problems = "/subiecte/OJL2024_Subiecte_Perf.pdf"
+#solutions = "/subiecte/OJL2024_Soluții_Perf.pdf"
+
+[[edition.event]]
+type = "Etapa Națională"
+date_start = 2024-04-05
+date_end = 2024-04-07
+
+[[edition.event.category]]
+type = "Exercițiu A"
+problems = "/subiecte/ONL2024_Subiecte_ExA.pdf"
+#solutions = "/subiecte/ONL2024_Soluții_ExA.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu B"
+problems = "/subiecte/ONL2024_Subiecte_ExB.pdf"
+#solutions = "/subiecte/ONL2024_Soluții_ExB.pdf"
+
+[[edition.event.category]]
+type = "Performanță"
+problems = "/subiecte/ONL2024_Subiecte_Perf.pdf"
+#solutions = "/subiecte/ONL2024_Soluții_Perf.pdf"
+
+[[edition]]
+name = "Ediția 2022-2023"
+year = 2023
+
+[[edition.event]]
+type = "Etapa Județeană"
+date_start = 2023-03-03
+date_end = 2023-03-03
+
+[[edition.event.category]]
+type = "Exercițiu A"
+problems = "/subiecte/OJL2023_Subiecte_ExA.pdf"
+#solutions = "/subiecte/OJL2023_Soluții_ExA.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu B"
+problems = "/subiecte/OJL2023_Subiecte_ExB.pdf"
+#solutions = "/subiecte/OJL2023_Soluții_ExB.pdf"
+
+[[edition.event.category]]
+type = "Performanță"
+problems = "/subiecte/OJL2023_Subiecte_Perf.pdf"
+#solutions = "/subiecte/OJL2023_Soluții_Perf.pdf"
+
+[[edition.event]]
+type = "Etapa Națională"
+date_start = 2023-03-31
+date_end = 2023-04-02
+
+[[edition.event.category]]
+type = "Exercițiu A"
+problems = "/subiecte/ONL2023_Subiecte_ExA.pdf"
+#solutions = "/subiecte/ONL2023_Soluții_ExA.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu B"
+problems = "/subiecte/ONL2023_Subiecte_ExB.pdf"
+#solutions = "/subiecte/ONL2023_Soluții_ExB.pdf"
+
+[[edition.event.category]]
+type = "Performanță"
+problems = "/subiecte/ONL2023_Subiecte_Perf.pdf"
+#solutions = "/subiecte/ONL2023_Soluții_Perf.pdf"
+
+[[edition]]
+name = "Ediția 2021-2022"
+year = 2022
+
+[[edition.event]]
+type = "Etapa Națională"
+date_start = 2022-03-19
+date_end = 2022-03-19
+
+[[edition.event.category]]
+type = "Exercițiu A"
+problems = "/subiecte/ONL2022_Subiecte_ExA.pdf"
+solutions = "/subiecte/ONL2022_Soluții_ExA.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu B"
+problems = "/subiecte/ONL2022_Subiecte_ExB.pdf"
+solutions = "/subiecte/ONL2022_Soluții_ExB.pdf"
+
+[[edition.event.category]]
+type = "Performanță"
+problems = "/subiecte/ONL2022_Subiecte_Perf.pdf"
+solutions = "/subiecte/ONL2022_Soluții_Perf.pdf"
+
+[[edition]]
+name = "Ediția 2020-2021"
+year = 2021
+
+[[edition.event]]
+type = "Concursul Online de Lingvistică"
+date_start = 2021-02-27
+date_end = 2021-02-27
+
+[[edition.event.category]]
+type = "Exercițiu A"
+#problems = "/subiecte/COL2021_Subiecte_ExA.pdf"
+#solutions = "/subiecte/COL2021_Soluții_ExA.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu B"
+#problems = "/subiecte/COL2021_Subiecte_ExB.pdf"
+#solutions = "/subiecte/COL2021_Soluții_ExB.pdf"
+
+[[edition.event.category]]
+type = "Performanță"
+#problems = "/subiecte/COL2021_Subiecte_Perf.pdf"
+#solutions = "/subiecte/COL2021_Soluții_Perf.pdf"
+
+[[edition]]
+name = "Ediția 2019-2020"
+year = 2020
+
+[[edition.event]]
+type = "Etapa Județeană"
+date_start = 2020-01-18
+date_end = 2020-01-18
+
+[[edition.event.category]]
+type = "Exercițiu A"
+#problems = "/subiecte/OJL2020_Subiecte_ExA.pdf"
+#solutions = "/subiecte/OJL2020_Soluții_ExA.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu B"
+#problems = "/subiecte/OJL2020_Subiecte_ExB.pdf"
+#solutions = "/subiecte/OJL2020_Soluții_ExB.pdf"
+
+[[edition.event.category]]
+type = "Performanță"
+#problems = "/subiecte/OJL2020_Subiecte_Perf.pdf"
+#solutions = "/subiecte/OJL2020_Soluții_Perf.pdf"
+
+[[edition.event]]
+type = "Concursul Online de Lingvistică"
+date_start = 2020-05-30
+date_end = 2020-05-30
+
+[[edition.event.category]]
+type = "Toate secțiunile"
+#problems = "/subiecte/COL2020_Subiecte.pdf"
+#solutions = "/subiecte/COL2020_Soluții.pdf"
+
+[[edition]]
+name = "Ediția 2018-2019"
+year = 2019
+
+[[edition.event]]
+type = "Etapa Județeană"
+date_start = 2019-02-17
+date_end = 2019-02-17
+
+[[edition.event.category]]
+type = "Exercițiu A"
+#problems = "/subiecte/OJL2019_Subiecte_ExA.pdf"
+#solutions = "/subiecte/OJL2019_Soluții_ExA.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu B"
+#problems = "/subiecte/OJL2019_Subiecte_ExB.pdf"
+#solutions = "/subiecte/OJL2019_Soluții_ExB.pdf"
+
+[[edition.event.category]]
+type = "Performanță"
+#problems = "/subiecte/OJL2019_Subiecte_Perf.pdf"
+#solutions = "/subiecte/OJL2019_Soluții_Perf.pdf"
+
+[[edition.event]]
+type = "Etapa Națională"
+date_start = 2019-05-10
+date_end = 2019-05-10
+
+[[edition.event.category]]
+type = "Exercițiu A"
+#problems = "/subiecte/ONL2019_Subiecte_ExA.pdf"
+#solutions = "/subiecte/ONL2019_Soluții_ExA.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu B"
+#problems = "/subiecte/ONL2019_Subiecte_ExB.pdf"
+#solutions = "/subiecte/ONL2019_Soluții_ExB.pdf"
+
+[[edition.event.category]]
+type = "Performanță"
+#problems = "/subiecte/ONL2019_Subiecte_Perf.pdf"
+#solutions = "/subiecte/ONL2019_Soluții_Perf.pdf"
+
+[[edition]]
+name = "Ediția 2017-2018"
+year = 2018
+
+[[edition.event]]
+type = "Etapa Județeană"
+date_start = 2018-01-27
+date_end = 2018-01-27
+
+[[edition.event.category]]
+type = "Exercițiu A"
+#problems = "/subiecte/OJL2018_Subiecte_ExA.pdf"
+#solutions = "/subiecte/OJL2018_Soluții_ExA.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu B"
+#problems = "/subiecte/OJL2018_Subiecte_ExB.pdf"
+#solutions = "/subiecte/OJL2018_Soluții_ExB.pdf"
+
+[[edition.event.category]]
+type = "Performanță"
+#problems = "/subiecte/OJL2018_Subiecte_Perf.pdf"
+#solutions = "/subiecte/OJL2018_Soluții_Perf.pdf"
+
+[[edition.event]]
+type = "Etapa Națională"
+date_start = 2018-05-11
+date_end = 2018-05-13
+
+[[edition.event.category]]
+type = "Exercițiu A"
+#problems = "/subiecte/ONL2018_Subiecte_ExA.pdf"
+#solutions = "/subiecte/ONL2018_Soluții_ExA.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu B"
+#problems = "/subiecte/ONL2018_Subiecte_ExB.pdf"
+#solutions = "/subiecte/ONL2018_Soluții_ExB.pdf"
+
+[[edition.event.category]]
+type = "Performanță"
+#problems = "/subiecte/ONL2018_Subiecte_Perf.pdf"
+#solutions = "/subiecte/ONL2018_Soluții_Perf.pdf"
+
+[[edition]]
+name = "Ediția 2016-2017"
+year = 2017
+
+[[edition.event]]
+type = "Etapa Județeană"
+date_start = 2017-01-21
+date_end = 2017-01-21
+
+[[edition.event.category]]
+type = "Exercițiu A"
+#problems = "/subiecte/OJL2017_Subiecte_ExA.pdf"
+#solutions = "/subiecte/OJL2017_Soluții_ExA.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu B"
+#problems = "/subiecte/OJL2017_Subiecte_ExB.pdf"
+#solutions = "/subiecte/OJL2017_Soluții_ExB.pdf"
+
+[[edition.event.category]]
+type = "Performanță"
+#problems = "/subiecte/OJL2017_Subiecte_Perf.pdf"
+#solutions = "/subiecte/OJL2017_Soluții_Perf.pdf"
+
+[[edition.event]]
+type = "Etapa Națională"
+date_start = 2017-05-12
+date_end = 2017-05-14
+
+[[edition.event.category]]
+type = "Exercițiu A"
+#problems = "/subiecte/ONL2017_Subiecte_ExA.pdf"
+#solutions = "/subiecte/ONL2017_Soluții_ExA.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu B"
+#problems = "/subiecte/ONL2017_Subiecte_ExB.pdf"
+#solutions = "/subiecte/ONL2017_Soluții_ExB.pdf"
+
+[[edition.event.category]]
+type = "Performanță"
+#problems = "/subiecte/ONL2017_Subiecte_Perf.pdf"
+#solutions = "/subiecte/ONL2017_Soluții_Perf.pdf"
+
+[[edition]]
+name = "Ediția 2015-2016"
+year = 2016
+
+[[edition.event]]
+type = "Etapa Județeană"
+#date_start = decembrie 2015
+#date_end = decembrie 2015
+
+[[edition.event.category]]
+type = "Exercițiu A"
+#problems = "/subiecte/OJL2016_Subiecte_ExA.pdf"
+#solutions = "/subiecte/OJL2016_Soluții_ExA.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu B"
+#problems = "/subiecte/OJL2016_Subiecte_ExB.pdf"
+#solutions = "/subiecte/OJL2016_Soluții_ExB.pdf"
+
+[[edition.event.category]]
+type = "Performanță"
+#problems = "/subiecte/OJL2016_Subiecte_Perf.pdf"
+#solutions = "/subiecte/OJL2016_Soluții_Perf.pdf"
+
+[[edition.event]]
+type = "Etapa Națională"
+#date_start = mai 2016
+#date_end = mai 2016
+
+[[edition.event.category]]
+type = "Exercițiu A"
+#problems = "/subiecte/ONL2016_Subiecte_ExA.pdf"
+#solutions = "/subiecte/ONL2016_Soluții_ExA.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu B"
+#problems = "/subiecte/ONL2016_Subiecte_ExB.pdf"
+#solutions = "/subiecte/ONL2016_Soluții_ExB.pdf"
+
+[[edition.event.category]]
+type = "Performanță"
+#problems = "/subiecte/ONL2016_Subiecte_Perf.pdf"
+#solutions = "/subiecte/ONL2016_Soluții_Perf.pdf"
+
+[[edition]]
+name = "Ediția 2014-2015"
+year = 2015
+
+[[edition.event]]
+type = "Etapa Națională"
+date_start = 2015-03-14
+date_end = 2015-03-16
+
+[[edition.event.category]]
+type = "Gimnaziu"
+#problems = "/subiecte/ONL2015_Subiecte_Gimnaziu.pdf"
+#solutions = "/subiecte/ONL2015_Soluții_Gimnaziu.pdf"
+
+[[edition.event.category]]
+type = "Liceu"
+#problems = "/subiecte/ONL2015_Subiecte_Liceu.pdf"
+#solutions = "/subiecte/ONL2015_Soluții_Liceu.pdf"
+
+[[edition]]
+name = "Ediția 2012-2013"
+year = 2013
+
+[[edition.event]]
+type = "Etapa Națională"
+date_start = 2013-03-29
+date_end = 2013-03-31
+
+[[edition.event.category]]
+type = "Gimnaziu"
+#problems = "/subiecte/ONL2013_Subiecte_Gimnaziu.pdf"
+#solutions = "/subiecte/ONL2013_Soluții_Gimnaziu.pdf"
+
+[[edition.event.category]]
+type = "Liceu"
+#problems = "/subiecte/ONL2013_Subiecte_Liceu.pdf"
+#solutions = "/subiecte/ONL2013_Soluții_Liceu.pdf"

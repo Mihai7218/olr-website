@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://mihai7218.github.io/olr-website/sitemap.xml

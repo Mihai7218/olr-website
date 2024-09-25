@@ -1,0 +1,119 @@
+/* Announcements */
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 13px !important;
+    }
+    
+    .announcement {
+        flex-direction: column;
+        margin: 0.5rem 0.5rem;
+    }
+    .ann_content {
+        font-size: 1.25rem !important;
+    }
+}
+
+.announcements  {
+    list-style-type: none;
+    
+    padding: 0.9375rem;
+
+    background-color: var(--fg-muted-2);
+    box-shadow: var(--edge-highlight);
+    border-radius: var(--rounded-corner);
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+.announcement {
+    display: flex;
+    justify-content: left;
+    gap: 0 0.9375rem;
+}
+
+.ann_content {
+    font-size: 1.5rem;
+
+    p {
+        margin: 0;
+    }
+}
+
+.ann_date {
+    padding-top: 0.25rem;
+    font-size: 1.25rem;
+    color: var(--fg-muted-5);
+    font-weight: 500;
+    font-family: var(--font-antique);
+    min-width: max-content;
+}
+
+
+/* Roadmap/Calendar */
+
+.roadmap {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    
+    background-color: var(--fg-muted-2);
+    box-shadow: var(--edge-highlight);
+    border-radius: var(--rounded-corner);
+    border-collapse: collapse;
+
+    padding: 3.125rem 2.875rem;
+
+    width: min(90vw, var(--container-width));
+
+    div {
+        width: max-content;
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
+    }
+}
+
+.roadmap-el {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roadmap-img-div {
+    border-radius: 100%;
+}
+
+.roadmap-img, .roadmap-arrow {
+    margin: 2.875rem;
+    filter: var(--filter-fg-color);
+}
+
+.roadmap-date {
+    color: var(--fg-muted-5);
+    font-weight: 500;
+    font-family: var(--font-antique);
+    font-size: 1.1rem;
+}
+
+.roadmap-title {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.unknown {
+    background-color: rgb(143, 143, 143, 0.6);
+}
+
+.contest {
+    background-color: rgb(0, 180, 18, 0.6);
+}
+
+.results {
+    background-color: rgb(209, 141, 4, 0.6);
+}
+
+.signup {
+    background-color: rgb(135, 92, 255, 0.6);
+}
