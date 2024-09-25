@@ -1,9 +1,23 @@
 /* Announcements */
 
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 13px !important;
+    }
+    
+    .announcement {
+        flex-direction: column;
+        margin: 0.5rem 0.5rem;
+    }
+    .ann_content {
+        font-size: 1.25rem !important;
+    }
+}
+
 .announcements  {
     list-style-type: none;
     
-    padding: 15px;
+    padding: 0.9375rem;
 
     background-color: var(--fg-muted-2);
     box-shadow: var(--edge-highlight);
@@ -13,13 +27,12 @@
 }
 
 .announcement {
-    display: grid;
-    grid-template-columns: 16% auto;
-    gap: 0 15px;
+    display: flex;
+    justify-content: left;
+    gap: 0 0.9375rem;
 }
 
 .ann_content {
-    grid-column: 2 3;
     font-size: 1.5rem;
 
     p {
@@ -28,13 +41,12 @@
 }
 
 .ann_date {
-    padding-top: 4px;
+    padding-top: 0.25rem;
     font-size: 1.25rem;
-    grid-column: 1 2;
-    text-align: right;
     color: var(--fg-muted-5);
     font-weight: 500;
     font-family: var(--font-antique);
+    min-width: max-content;
 }
 
 
@@ -52,14 +64,14 @@
     border-radius: var(--rounded-corner);
     border-collapse: collapse;
 
-    padding: 50px 30px;
+    padding: 3.125rem 2.875rem;
 
     width: min(90vw, var(--container-width));
 
     div {
         width: max-content;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
     }
 }
 
@@ -74,7 +86,7 @@
 }
 
 .roadmap-img, .roadmap-arrow {
-    margin: 30px;
+    margin: 2.875rem;
     filter: var(--filter-fg-color);
 }
 
