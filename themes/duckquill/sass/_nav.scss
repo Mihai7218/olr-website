@@ -100,6 +100,39 @@
 			}
 		}
 
+		summary.active {
+			box-shadow: var(--edge-highlight);
+			background-color: var(--accent-color-alpha);
+			color: var(--accent-color);
+
+			&:hover {
+				background-color: var(--accent-color);
+				color: var(--contrast-color);
+			}
+		}
+		
+		summary a {
+			padding: 0;
+		}
+		
+		summary a:hover {
+			box-shadow: none !important;
+			background-color: rgba(0, 0, 0, 0) !important;
+			color: var(--fg-muted-5);
+		}
+
+		summary.active a {
+				color: var(--accent-color);
+
+				&:hover {
+					color: var(--contrast-color);
+				}
+		}
+
+		summary.active:hover a {
+			color: var(--contrast-color);
+		}
+
 		#home a {
 			color: var(--fg-muted-5);
 			font-weight: 800;
