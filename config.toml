@@ -32,9 +32,10 @@ fb_url = "https://www.facebook.com/olimpiadadelingvistica"
 # Links used in the nav; any icon from https://icons.getbootstrap.com
 # can be used as the icon. The bi- prefix should not be added.
 links = [
-  {url = "/despre", name = "Test", menu = [
-    {url = "/despre#Istorie", name = "Istoria Olimpiadei"},
-    {url = "/despre#Înscriere", name = "Înscriere"}
+  {url = "/despre", name = "Despre", menu = [
+    {url = "/despre#istoria-olimpiadei", name = "Istoria Olimpiadei"},
+    {url = "/despre#regulament", name = "Regulament"},
+    {url = "/despre#inscrieri", name = "Înscriere"}
   ]},
   {url = "/resurse", name = "Resurse"},
 ]
