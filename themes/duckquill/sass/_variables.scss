@@ -17,6 +17,7 @@
 @include theme-variables using ($theme) {
 	@if $theme =="dark" {
 		// COLORS
+		--filter-fg-color: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 		--bg-color: color-mix(in srgb, var(--accent-color) 10%, black);
 		--fg-color: rgb(255 255 255);
 		--fg-muted-1: rgb(255 255 255 / 0.05);
@@ -41,6 +42,7 @@
 
 	@else {
 		// COLORS
+		--filter-fg-color: invert(0%) sepia(33%) saturate(2977%) hue-rotate(255deg) brightness(104%) contrast(110%);
 		--bg-color: color-mix(in srgb, var(--accent-color) 20%, white);
 		--blue-bg: rgb(from var(--blue-fg) r g b / var(--color-opacity));
 		--blue-fg: rgb(53 132 228);
