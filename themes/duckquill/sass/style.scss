@@ -1,5 +1,5 @@
 /*!
- * Duckquill v4.5.0 (https://duckquill.daudix.one)
+ * Duckquill v5.4.0 (https://duckquill.daudix.one)
  * Copyright 2024 David "Daudix" Lapshin
  * Licensed under MIT (https://codeberg.org/daudix/duckquill/src/branch/main/LICENSE)
  */
@@ -21,12 +21,14 @@
 @use "general";
 @use "hidden";
 @use "icon";
+@use "iframe";
 @use "input";
 @use "media";
 @use "nav";
 @use "not-found";
 @use "post-nav";
 @use "pre-container";
+@use "spoiler";
 @use "statements";
 @use "table";
 @use "tags";

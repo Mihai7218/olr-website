@@ -1,5 +1,6 @@
 /* Announcements */
 
+
 @media screen and (max-width: 600px) {
     html {
         font-size: 13px !important;
@@ -66,7 +67,7 @@
 
     padding: 3.125rem 2.875rem;
 
-    width: min(90vw, var(--container-width));
+    width: min(80vw, var(--container-width));
 
     div {
         width: max-content;

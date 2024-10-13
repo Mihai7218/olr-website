@@ -23,8 +23,8 @@
 				// Code block header
 				let header = document.createElement("div");
 				header.classList.add("header");
-				header.appendChild(button);
 				header.appendChild(title);
+				header.appendChild(button);
 
 				// Container that holds header and the code block itself
 				let container = document.createElement("div");
@@ -36,22 +36,24 @@
 				container.appendChild(block);
 
 				button.addEventListener("click", async () => {
-					await copyCode(block, header);
+					await copyCode(block, header, button); // Pass the button here
 				});
 			}
 		});
 
-		async function copyCode(block, header) {
+		async function copyCode(block, header, button) {
 			let code = block.querySelector("code");
 			let text = code.innerText;
 
 			await navigator.clipboard.writeText(text);
 
 			header.classList.add("active");
+			button.setAttribute("disabled", true);
 
-			setTimeout(() => {
+			header.addEventListener("animationend", () => {
 				header.classList.remove("active");
-			}, 800);
+				button.removeAttribute("disabled");
+			}, { once: true });
 		}
 	});
 </script>
