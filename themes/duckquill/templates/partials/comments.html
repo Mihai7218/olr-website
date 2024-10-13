@@ -20,7 +20,16 @@
 
 <section id="comments">
 	{%- if config.extra.comments.show_qr -%}
-		<img id="qrcode" class="no-hover pixels" title="{{ macros_translate::translate(key='comments_qr', default='QR code to a Mastodon post', language_strings=language_strings) }}" {%- if config.markdown.lazy_async_image -%}decoding="async" loading="lazy"{%- endif -%} src="https://api.qrserver.com/v1/create-qr-code/?data=https://{{ host }}/@{{ username }}/{{ id }}&format=gif" />
+		<img
+			id="qrcode"
+			class="pixels no-hover"
+			title="{{ macros_translate::translate(key='comments_qr', default='QR code to a Mastodon post', language_strings=language_strings) }}"
+			{%- if config.markdown.lazy_async_image -%}
+				decoding="async"
+				loading="lazy"
+			{%- endif -%}
+			src="https://api.qrserver.com/v1/create-qr-code/?data=https://{{ host }}/@{{ username }}/{{ id }}"
+		/>
 	{%- endif -%}
 	<h2>{{ macros_translate::translate(key="comments", default="Comments", language_strings=language_strings) }}</h2>
 	<p>{{ macros_translate::translate(key="comments_description", default="You can comment on this blog post by publicly replying to this post using a Mastodon or other ActivityPub/Fediverse account. Known non-private replies are displayed below.", language_strings=language_strings) }}</p>
@@ -81,6 +90,7 @@
 
 			let loadCommentsButton = document.getElementById("load-comments");
 			loadCommentsButton.innerHTML = "{{ macros_translate::translate(key='loading', default='Loading', language_strings=language_strings) }}…";
+			loadCommentsButton.disabled = true;
 
 			fetch("https://{{ host }}/api/v1/statuses/{{ id }}/context")
 				.then(function (response) {
@@ -160,7 +170,7 @@
 							avatar.setAttribute("rel", "{{ rel_attributes }}");
 							avatar.setAttribute(
 								"title",
-								`{{ macros_translate::translate(key="view_profile", default="View profile at", language_strings=language_strings) }} @${status.account.username}@${instance}`
+								`{{ macros_translate::translate(key="view_profile", default="View Profile At", language_strings=language_strings) }} @${status.account.username}@${instance}`
 							);
 							avatar.appendChild(avatarPicture);
 
@@ -188,7 +198,7 @@
 							let permalink = document.createElement("a");
 							permalink.setAttribute("href", status.url);
 							permalink.setAttribute("itemprop", "url");
-							permalink.setAttribute("title", `{{ macros_translate::translate(key="view_comment", default="View comment at", language_strings=language_strings) }} ${instance}`);
+							permalink.setAttribute("title", `{{ macros_translate::translate(key="view_comment", default="View Comment At", language_strings=language_strings) }} ${instance}`);
 							permalink.setAttribute("rel", "{{ rel_attributes }}");
 							permalink.textContent = new Date(
 								status.created_at
@@ -200,6 +210,7 @@
 							let timestamp = document.createElement("time");
 							timestamp.setAttribute("datetime", status.created_at);
 							timestamp.appendChild(permalink);
+							permalink.classList.add("external");
 
 							let main = document.createElement("main");
 							main.setAttribute("itemprop", "text");
@@ -277,6 +288,13 @@
 												media.appendChild(mediaElement);
 												break;
 										}
+
+										let mediaLink = document.createElement("a");
+										mediaLink.setAttribute("href", attachment.url);
+										mediaLink.setAttribute("rel", "{{ rel_attributes }}");
+										mediaLink.appendChild(mediaElement);
+								
+										media.appendChild(mediaLink);
 									}
 								});
 							}
@@ -286,7 +304,7 @@
 							let boosts = document.createElement("a");
 							boosts.className = "boosts";
 							boosts.setAttribute("href", `${status.url}/reblogs`);
-							boosts.setAttribute("title", `{{ macros_translate::translate(key="boosts_from", default="Boosts from", language_strings=language_strings) }} ${instance}`);
+							boosts.setAttribute("title", `{{ macros_translate::translate(key="boosts_from", default="Boosts from $INSTANCE", language_strings=language_strings) }}`.replace("$INSTANCE", instance));
 
 							let boostsIcon = document.createElement("i");
 							boostsIcon.className = "icon";
@@ -297,7 +315,7 @@
 							let faves = document.createElement("a");
 							faves.className = "faves";
 							faves.setAttribute("href", `${status.url}/favourites`);
-							faves.setAttribute("title", `{{ macros_translate::translate(key="faves_from", default="Favorites from", language_strings=language_strings) }} ${instance}`);
+							faves.setAttribute("title", `{{ macros_translate::translate(key="faves_from", default="Favorites from $INSTANCE", language_strings=language_strings) }}`.replace("$INSTANCE", instance));
 
 							let favesIcon = document.createElement("i");
 							favesIcon.className = "icon";
@@ -345,12 +363,18 @@
 
 					else {
 						var statusText = document.createElement("p");
-						statusText.innerHTML = "{{ macros_translate::translate(key='no_comments', default='No comments yet :/', language_strings=language_strings) }}";
+						statusText.innerHTML = "{{ macros_translate::translate(key='no_comments', default='No Comments yet :/', language_strings=language_strings) }}";
 						statusText.setAttribute("id", "comments-status");
 						commentsWrapper.appendChild(statusText);
 					}
 
 					loadCommentsButton.innerHTML = "{{ macros_translate::translate(key='reload', default='Reload', language_strings=language_strings) }}";
+				})
+				.catch(function (error) {
+					console.error('Error loading comments:', error);
+				})
+				.finally(function () {
+					loadCommentsButton.disabled = false;
 				});
 		}
 	</script>

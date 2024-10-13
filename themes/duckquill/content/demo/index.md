@@ -1,15 +1,16 @@
 +++
 title = "Demo Page"
+[extra]
+katex = true
+archive = "This page is in fact not archived. It is only here to demonstrate the archival statement."
+trigger = "This page contains blackjack and hookers, and bad jokes such as this one."
+disclaimer = """
+- All tricks in this page are performed by the lab boys, don't try this at home.
+- Don't expose yourself to 4000° kelvin.
+- Don't take party escort submission position.
+- Don't interact with asbestos and moon rocks.
+"""
 +++
-
-# Demo Page
-
-{% alert(note=true) %}
-This is a demo of most of the components, but some of them are only accessible on specific pages. If you wish to see them, follow one of these:
-
-- [Blog Demo](@/blog/_index.md)
-- [Post Demo](@/blog/the-quill-of-duck/index.md)
-{% end %}
 
 ## Markdown
 
@@ -54,16 +55,17 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 - [ ] Coffee
 - [x] Combustible lemons
 
-![Male mallard duck](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Male_mallard_duck_2.jpg/800px-Male_mallard_duck_2.jpg)
+[![Male mallard duck](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Male_mallard_duck_2.jpg/800px-Male_mallard_duck_2.jpg)](https://upload.wikimedia.org/wikipedia/commons/2/24/Male_mallard_duck_2.jpg)
 
 | Mare         | Rating            | Additional info  |
-| :----------- | :---------------- | :---------------  |
+| :----------- | :---------------- | :--------------- |
 | Fluttershy   | Best pone         | Shy and adorable |
 | Apple Jack   | Good pone         | Honest and nice  |
-| Pinkie Pie   | Fun pone          | Party horn!      |
-| Twilight     | Decent pone       | Neeerd           |
-| Rainbow Dash | Annoying pone     | Looks badass     |
-| Rarity       | Fancy pone        | Sometimes nice   |
+| Pinkie Pie   | Fun pone          | Parties and ADHD |
+| Twilight     | Main pone         | Neeerd           |
+| Rainbow Dash | Yes               | Looks badass     |
+| Rarity       | Fancy pone        | Generous         |
+| Derpy Hooves | *M u f f i n s*   | [REDACTED]       |
 
 ```rust
 let highlight = true;
@@ -86,9 +88,25 @@ pre table td:nth-of-type(1) {
 
 ## Extra
 
+### KaTeX
+
+Duckquill can render LaTeX using the [KaTeX](https://katex.org) library. It can be enabled using the `extra.katex` config variable.
+
+```latex
+$$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi)\,e^{2 \pi i \xi x}\,d\xi$$
+```
+
+$$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi)\,e^{2 \pi i \xi x}\,d\xi$$
+
+```latex
+$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi)\,e^{2 \pi i \xi x}\,d\xi$
+```
+
+$\relax f(x) = \int_{-\infty}^\infty\hat{f}(\xi)\,e^{2 \pi i \xi x}\,d\xi$
+
 ### Shortcodes
 
-Duckquill provides a few useful [shortcodes](https://www.getzola.org/documentation/content/shortcodes/) that simplify some tasks. The can be used on all pages.
+Duckquill provides a few useful [shortcodes](https://www.getzola.org/documentation/content/shortcodes/) that simplify some tasks. They can be used on all pages.
 
 #### Alerts
 
@@ -142,11 +160,13 @@ Available variables are:
 - `start`: Float image to the start of paragraph and scale it down.
 - `end`: Float image to the end of paragraph and scale it down.
 - `pixels`: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.
-- `transparent`: Removes rounded corners and shadow, useful for transparent images.
+- `transparent`: Removes rounded corners and shadow, useful for images with transparency.
 - `no_hover`: Removes zoom on hover.
+- `spoiler`: Blurs image until hovered over/pressed on, useful for plot rich game screenshots.
+- `spoiler` with `solid`: Ditto, but makes the image completely hidden.
 
 ```jinja2
-{{/* image(url="image.png", alt="This is an image" no_hover=true) */}}
+{{/* image(url="image.png", alt="This is an image", no_hover=true) */}}
 ```
 
 <figure>
@@ -159,20 +179,27 @@ Available variables are:
 <figcaption>Image with compressed version, an alt text, and without zoom on hover</figcaption>
 </figure>
 
-Alternatively, you can append the following URL anchors. It can be more handy in some cases, e.g such images will render normally in any Markdown editor, opposed to the Zola shortcodes.
+<figure>
+{{ image(url="https://files.catbox.moe/lk7nee.jpg", alt="Portal Gun blueprint", spoiler=true) }}
+<figcaption>Image with an alt text, hidden behind a spoiler</figcaption>
+</figure>
+
+Alternatively, you can append the following URL anchors. It can be more handy in some cases, e.g. such images will render normally in any Markdown editor, opposed to the Zola shortcodes.
 
 - `#full`: Forces image to be full-width.
 - `#full-bleed`: Forces image to fill all the available screen width. Removes shadow, rounded corners and zoom on hover.
 - `#start`: Float image to the start of paragraph and scale it down.
 - `#end`: Float image to the end of paragraph and scale it down.
 - `#pixels`: Uses nearest neighbor algorithm for scaling, useful for keeping pixel-art sharp.
-- `#transparent`: Removes rounded corners and shadow, useful for transparent images.
+- `#transparent`: Removes rounded corners and shadow, useful for images with transparency.
 - `#no-hover`: Removes zoom on hover.
+- `#spoiler`: Blurs image until hovered over/pressed on, useful for plot rich game screenshots.
+- `#spoiler` with `#solid`: Ditto, but makes the image completely hidden.
 
 <br />
 <figure>
 
-![Toolbx header image](https://containertoolbx.org/assets/toolbx.gif#full#pixels#transparent#no-hover)
+[![Toolbx header image](https://containertoolbx.org/assets/toolbx.gif#full#pixels#transparent#no-hover)](https://containertoolbx.org)
 <figcaption>Full-width image with an alt text, pixel-art rendering, no shadow and rounded corners, and no zoom on hover</figcaption>
 </figure>
 
@@ -239,6 +266,35 @@ Alright, this one doesn't simplify anything, it just adds a CRT-like effect arou
 
 There's also a `cursor` class that you can add to a span with e.g. `█` character to simulate the terminal cursor. It doesn't work from inside Markdown code blocks though.
 
+#### YouTube
+
+Allows to embed a YouTube video using youtube-nocookie.
+
+Available variables are:
+
+- `autoplay`: Whether the video should autoplay.
+- `start`: On which second video should start.
+
+```jinja2
+{{/* youtube(id="0Da8ZhKcNKQ") */}}
+```
+
+{{ youtube(id="0Da8ZhKcNKQ") }}
+
+#### Vimeo
+
+Allows to embed a Vimeo video.
+
+Available variables are:
+
+- `autoplay`: Whether the video should autoplay.
+
+```jinja2
+{{/* vimeo(id="869483483") */}}
+```
+
+{{ vimeo(id="869483483") }}
+
 ### Description List (`<dl>`)
 
 ```html
@@ -285,6 +341,66 @@ There's also a `cursor` class that you can add to a span with e.g. `█` charact
   </li>
   <li>
     <input type="checkbox" disabled />
+    <label>&nbsp;Combustible lemons</label>
+  </li>
+</ul>
+
+With `switch` class:
+
+```html
+<input class="switch" type="checkbox" />
+<label>Checkbox</label>
+```
+
+<ul>
+  <li>
+    <input class="switch" type="checkbox" />
+    <label>&nbsp;Milk</label>
+  </li>
+  <li>
+    <input class="switch" type="checkbox" />
+    <label>&nbsp;Eggs</label>
+  </li>
+  <li>
+    <input class="switch" type="checkbox" />
+    <label>&nbsp;Flour</label>
+  </li>
+  <li>
+    <input class="switch" type="checkbox" checked />
+    <label>&nbsp;Coffee</label>
+  </li>
+  <li>
+    <input class="switch" type="checkbox" disabled />
+    <label>&nbsp;Combustible lemons</label>
+  </li>
+</ul>
+
+With `switch` and `big` classes:
+
+```html
+<input class="switch big" type="checkbox" />
+<label>Checkbox</label>
+```
+
+<ul>
+  <li>
+    <input class="switch big" type="checkbox" />
+    <label>&nbsp;Milk</label>
+  </li>
+  <li>
+    <input class="switch big" type="checkbox" />
+    <label>&nbsp;Eggs</label>
+  </li>
+  <li>
+    <input class="switch big" type="checkbox" />
+    <label>&nbsp;Flour</label>
+  </li>
+  <li>
+    <input class="switch big" type="checkbox" checked />
+    <label>&nbsp;Coffee</label>
+  </li>
+  <li>
+    <input class="switch big" type="checkbox" disabled />
     <label>&nbsp;Combustible lemons</label>
   </li>
 </ul>
@@ -399,7 +515,7 @@ With `range` type:
 <abbr title="American Standard Code for Information Interchange">ASCII</abbr>
 ```
 
-The <abbr title="American Standard Code for Information Interchange">ASCII</abbr> art are awesome!
+The <abbr title="American Standard Code for Information Interchange">ASCII</abbr> art is awesome!
 
 ### Aside (`<aside>`)
 
@@ -411,7 +527,7 @@ The <abbr title="American Standard Code for Information Interchange">ASCII</abbr
 
 <aside>
 Quill and a parchment
-<img class="transparent no-hover" style="margin-bottom: 0; border-radius: 0;" alt="Quill and a parchment" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/%D7%A7%D7%9C%D7%A3%2C_%D7%A0%D7%95%D7%A6%D7%94_%D7%95%D7%93%D7%99%D7%95.jpg/326px-%D7%A7%D7%9C%D7%A3%2C_%D7%A0%D7%95%D7%A6%D7%94_%D7%95%D7%93%D7%99%D7%95.jpg" />
+<img class="transparent no-hover" style="margin-block-end: 0; border-radius: 0;" alt="Quill and a parchment" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/%D7%A7%D7%9C%D7%A3%2C_%D7%A0%D7%95%D7%A6%D7%94_%D7%95%D7%93%D7%99%D7%95.jpg/326px-%D7%A7%D7%9C%D7%A3%2C_%D7%A0%D7%95%D7%A6%D7%94_%D7%95%D7%93%D7%99%D7%95.jpg" />
 </aside>
 
 A quill is a writing tool made from a moulted flight feather (preferably a primary wing-feather) of a large bird. Quills were used for writing with ink before the invention of the dip pen, the metal-nibbed pen, the fountain pen, and, eventually, the ballpoint pen.
@@ -484,6 +600,22 @@ Blah blah <q>Inline Quote</q> hmm.
 
 <a class="external" href="https://example.org">Link to site</a>
 
+### Spoilers
+
+```html
+<span class="spoiler">Some spoiler</span>
+```
+
+You know, <span class="spoiler">Duckquill is a pretty dumb name.</span> I know, crazy.
+
+With `solid` class:
+
+```html
+<span class="spoiler solid">Some spoiler</span>
+```
+
+You know, <span class="spoiler solid">Duckquill is a pretty dumb name.</span> I know, crazy.
+
 ### Buttons Dialog
 
 ```html.j2
@@ -503,21 +635,34 @@ Blah blah <q>Inline Quote</q> hmm.
 
 <!-- For the demo purposes only -->
 <div id="color-picker-container">
-<label for="color-picker">Primary color:</label>
-<input id="color-picker" type="color" />
+  <small>Accent color:</small>
+  <br />
+  <input id="color-picker-light" type="color" value="#ff7800" />
+  <label for="color-picker-light">Light theme</label>
+  <br />
+  <input id="color-picker-dark" type="color" value="#ffa348" />
+  <label for="color-picker-dark">Dark theme</label>
+  <br />
+  <small>Fix contrast:</small>
+  <br />
+  <input id="contrast-color-light" class="switch" type="checkbox" />
+  <label for="contrast-color-light">Light theme</label>
+  <br />
+  <input id="contrast-color-dark" class="switch" type="checkbox" checked />
+  <label for="contrast-color-dark">Dark theme</label>
 </div>
 
 <style>
   #color-picker-container {
     -webkit-backdrop-filter: var(--blur);
     position: fixed;
-    bottom: 1rem;
-    left: 0;
     transform: translateX(calc(-100% + 1rem));
     z-index: 1;
     backdrop-filter: var(--blur);
     transition: var(--transition);
-    box-shadow: var(--edge-highlight);
+    inset-block-end: 1rem;
+    inset-inline-start: 0;
+    box-shadow: var(--edge-highlight), var(--shadow-glass);
     border-start-end-radius: var(--rounded-corner);
     border-end-end-radius: var(--rounded-corner);
     background-color: var(--nav-bg);
@@ -535,45 +680,112 @@ Blah blah <q>Inline Quote</q> hmm.
   }
 
   :root[dir*="rtl"] #color-picker-container {
-    right: 0;
-    left: unset;
     transform: translateX(calc(100% - 1rem));
   }
 
   :root[dir*="rtl"] #color-picker-container:hover {
     transform: none;
   }
+
+  #color-picker-light,
+  #color-picker-dark,
+  #contrast-color-light,
+  #contrast-color-dark {
+    margin-inline-end: 0.25rem;
+  }
 </style>
 
 <script type="text/javascript">
-  let colorPicker;
-  const defaultColor = window.getComputedStyle(document.documentElement).getPropertyValue("--primary-color");
-  console.log(defaultColor);
+  const colorPickerLight = document.querySelector("#color-picker-light");
+  const colorPickerDark = document.querySelector("#color-picker-dark");
+  const contrastCheckboxLight = document.querySelector("#contrast-color-light");
+  const contrastCheckboxDark = document.querySelector("#contrast-color-dark");
 
-  window.addEventListener("load", startup, false);
+  let accentColorLight = colorPickerLight.value;
+  let accentColorDark = colorPickerDark.value;
 
-  function hexToRGB(hex, alpha) {
-    var r = parseInt(hex.slice(1, 3), 16),
-      g = parseInt(hex.slice(3, 5), 16),
-      b = parseInt(hex.slice(5, 7), 16);
+  colorPickerLight.addEventListener("input", updateAccentColorLight);
+  colorPickerDark.addEventListener("input", updateAccentColorDark);
+  contrastCheckboxLight.addEventListener("change", updateStyles);
+  contrastCheckboxDark.addEventListener("change", updateStyles);
 
-    if (alpha) {
-      return "rgba(" + r + ", " + g + ", " + b + ", " + alpha + ")";
-    } else {
-      return "rgb(" + r + ", " + g + ", " + b + ")";
+  function updateAccentColorLight() {
+    accentColorLight = colorPickerLight.value;
+    updateStyles();
+  }
+
+  function updateAccentColorDark() {
+    accentColorDark = colorPickerDark.value;
+    updateStyles();
+  }
+
+  function updateStyles() {
+    const contrastColorLight = contrastCheckboxLight.checked;
+    const contrastColorDark = contrastCheckboxDark.checked;
+
+    let styleElement = document.getElementById("dynamic-styles");
+
+    if (!styleElement) {
+      styleElement = document.createElement("style");
+      styleElement.id = "dynamic-styles";
+      document.head.appendChild(styleElement);
     }
+
+    let styles = `
+      :root {
+        --accent-color: ${accentColorLight};
+      }
+      [data-theme="dark"] {
+        --accent-color: ${accentColorDark};
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --accent-color: ${accentColorDark};
+        }
+      }
+    `;
+
+    if (contrastColorLight) {
+      styles += `
+        :root {
+          --contrast-color: rgb(0 0 0 / 0.8);
+        }
+      `;
+    } else {
+      styles += `
+        :root {
+          --contrast-color: #fff;
+        }
+      `;
+    }
+
+    if (contrastColorDark) {
+      styles += `
+        [data-theme="dark"] {
+          --contrast-color: rgb(0 0 0 / 0.8);
+        }
+        @media (prefers-color-scheme: dark) {
+          :root:not([data-theme="light"]) {
+            --contrast-color: rgb(0 0 0 / 0.8);
+          }
+        }
+      `;
+    } else {
+      styles += `
+        [data-theme="dark"] {
+          --contrast-color: #fff;
+        }
+        @media (prefers-color-scheme: dark) {
+          :root:not([data-theme="light"]) {
+            --contrast-color: #fff;
+          }
+        }
+      `;
+    }
+
+    styleElement.textContent = styles;
   }
 
-  function startup() {
-    colorPicker = document.querySelector("#color-picker");
-    colorPicker.value = defaultColor;
-    colorPicker.addEventListener("input", update, false);
-    colorPicker.select();
-  }
-
-  function update(event) {
-    document.documentElement.style.setProperty('--primary-color', event.target.value);
-    document.documentElement.style.setProperty('--primary-color-alpha', hexToRGB(event.target.value, 0.2));
-  }
+  updateStyles();
 </script>
 <!-- End -->

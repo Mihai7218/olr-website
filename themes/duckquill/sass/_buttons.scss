@@ -2,43 +2,48 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: baseline;
-	margin-top: 4rem;
+	margin-block-start: 4rem;
 }
 
-.inline-button {
-	-webkit-appearance: none;
+a.inline-button {
+	text-decoration: none;
+}
+
+button.inline-button {
 	appearance: none;
-	transition: var(--transition);
 	cursor: pointer;
-	box-shadow: var(--edge-highlight);
 	border: none;
+}
+
+a.inline-button,
+button.inline-button {
+	transition: var(--transition);
+	box-shadow: var(--edge-highlight);
 	border-radius: var(--rounded-corner);
 	background-color: var(--fg-muted-1);
 	padding: 0.75rem 1rem;
-	color: var(--fg-color);
+	color: var(--fg-muted-5);
 	font-weight: bold;
-	font-size: 0.875rem;
+	font-size: var(--font-size-small);
 	line-height: 1;
-	text-decoration: none;
 
 	&:hover {
 		background-color: var(--fg-muted-2);
-		text-decoration: none;
+		color: var(--fg-color);
 	}
 
 	&:active {
-		transform: scale(var(--active));
+		transform: var(--active);
 	}
 
 	&.colored {
 		box-shadow: none;
 		background-color: transparent;
-		color: var(--primary-color);
+		color: var(--accent-color);
 
 		&:hover {
 			box-shadow: var(--edge-highlight);
-			background-color: var(--primary-color-alpha);
+			background-color: var(--accent-color-alpha);
 		}
 	}
 }

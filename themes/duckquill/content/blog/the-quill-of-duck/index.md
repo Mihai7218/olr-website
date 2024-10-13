@@ -1,5 +1,5 @@
 +++
-authors = ["Duck Quack", "Scrooge McDuck"]
+authors = ["Scrooge McDuck", "Darkwing Duck"]
 title = "The Quill of Duck"
 description = "This is a Duckquill post example, this post has nothing but a bunch of text and random formatting, acting like a demo."
 date = 2023-08-31
@@ -7,8 +7,10 @@ updated = "2024-06-21"
 [taxonomies]
 tags = ["Demo", "Test"]
 [extra]
-banner = "quill.png#pixels"
+banner = "banner.webp"
 toc = true
+toc_inline = true
+toc_ordered = true
 trigger = "This page contains blackjack and hookers, and bad jokes such as this one."
 disclaimer = """
 - All tricks in this page are performed by the lab boys, don't try this at home.
@@ -16,8 +18,30 @@ disclaimer = """
 - Don't take party escort submission position.
 - Don't interact with asbestos and moon rocks.
 """
-featured = true
 [extra.comments]
+# Long thread with image
+#
+# host = "mastodon.social"
+# user = "brownpau"
+# id = "104529877688537579"
+#
+# Thread with multiple images per post
+#
+# host = "mastodon.blaede.family"
+# user = "cassidy"
+# id = "112774854109302186"
+#
+# Post on GoToSocial
+#
+# host = "alpha.polymaths.social"
+# user = "orbitalmartian"
+# id = "01J7ETKJ19FGBDQGS1ZWZ3KEPP"
+#
+# Post on Sharkey
+#
+# host = "is-a.wyvern.rip"
+# user = "volpeon"
+# id = "9qy755nsnu2c0hbc"
 host = "toot.community"
 user = "sungsphinx"
 id = "111789185826519979"

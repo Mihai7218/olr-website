@@ -1,8 +1,8 @@
-{#- Based on https://github.com/welpo/tabi/blob/main/templates/partials/language_switcher.html -#}
+{#- Based on https://github.com/welpo/tabi/blob/7b00ed1d9dca5c529d2816c5b6679bfe600d63fc/templates/partials/language_switcher.html -#}
 
 <li id="language-switcher">
-    <details>
-        <summary title="{{ macros_translate::translate(key='language', default='Language', language_strings=language_strings) }}">
+    <details class="closable">
+        <summary class="circle" title="{{ macros_translate::translate(key='language', default='Language', language_strings=language_strings) }}">
             <i class="icon"></i>
         </summary>
         <ul>
