@@ -29,6 +29,8 @@ show_theme_switcher = true
 icons = true
 show_facebook = true
 fb_url = "https://www.facebook.com/olimpiadadelingvistica"
+show_mail = true
+mailto = "mailto:olimpiada.lingvistica@gmail.com"
 # Links used in the nav; any icon from https://icons.getbootstrap.com
 # can be used as the icon. The bi- prefix should not be added.
 links = [

@@ -97,6 +97,14 @@
 					</a>
 				</li>
             {% endif %}
+
+            {% if config.extra.nav.show_mail %}
+				<li id="mail">
+					<a href="{{ config.extra.nav.mailto }}" title="{{ macros_translate::translate(key='mail', default='Mail Address', language_strings=language_strings) }}">
+						<i class="icon"></i>
+					</a>
+				</li>
+            {% endif %}
 			{%- if config.build_search_index %}
 				<li id="search">
 					<button class="circle" onclick="toggleSearch()" title="{{ macros_translate::translate(key='search', default='Search', language_strings=language_strings) }}">
