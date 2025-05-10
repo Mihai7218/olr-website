@@ -118,3 +118,15 @@
 .signup {
     background-color: rgb(135, 92, 255, 0.6);
 }
+
+.banner {
+    font-size: 3rem;
+    text-align: center;
+    margin: auto;
+
+    .banner-text {
+        font-family: var(--font-antique);
+        margin: auto;
+    }
+
+}
