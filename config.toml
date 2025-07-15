@@ -2,7 +2,7 @@ title = "Olimpiada de Lingvistică din România"
 default_language="ro"
 
 # The URL the site will be built for
-base_url = "https://mihai7218.github.io/olr-website"
+base_url = "https://olingv.ro"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
