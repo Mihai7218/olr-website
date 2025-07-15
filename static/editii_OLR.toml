@@ -10,17 +10,17 @@ date_end = 2024-02-24
 [[edition.event.category]]
 type = "Exercițiu A"
 problems = "/subiecte/OJL2024_Subiecte_ExA.pdf"
-#solutions = "/subiecte/OJL2024_Soluții_ExA.pdf"
+solutions = "/subiecte/OJL2024_Soluții_ExA.pdf"
 
 [[edition.event.category]]
 type = "Exercițiu B"
 problems = "/subiecte/OJL2024_Subiecte_ExB.pdf"
-#solutions = "/subiecte/OJL2024_Soluții_ExB.pdf"
+solutions = "/subiecte/OJL2024_Soluții_ExB.pdf"
 
 [[edition.event.category]]
 type = "Performanță"
 problems = "/subiecte/OJL2024_Subiecte_Perf.pdf"
-#solutions = "/subiecte/OJL2024_Soluții_Perf.pdf"
+solutions = "/subiecte/OJL2024_Soluții_Perf.pdf"
 
 [[edition.event]]
 type = "Etapa Națională"
@@ -30,17 +30,17 @@ date_end = 2024-04-07
 [[edition.event.category]]
 type = "Exercițiu A"
 problems = "/subiecte/ONL2024_Subiecte_ExA.pdf"
-#solutions = "/subiecte/ONL2024_Soluții_ExA.pdf"
+solutions = "/subiecte/ONL2024_Soluții_ExA.pdf"
 
 [[edition.event.category]]
 type = "Exercițiu B"
 problems = "/subiecte/ONL2024_Subiecte_ExB.pdf"
-#solutions = "/subiecte/ONL2024_Soluții_ExB.pdf"
+solutions = "/subiecte/ONL2024_Soluții_ExB.pdf"
 
 [[edition.event.category]]
 type = "Performanță"
 problems = "/subiecte/ONL2024_Subiecte_Perf.pdf"
-#solutions = "/subiecte/ONL2024_Soluții_Perf.pdf"
+solutions = "/subiecte/ONL2024_Soluții_Perf.pdf"
 
 [[edition]]
 name = "Ediția 2022-2023"
@@ -121,18 +121,18 @@ date_end = 2021-02-27
 
 [[edition.event.category]]
 type = "Exercițiu A"
-#problems = "/subiecte/COL2021_Subiecte_ExA.pdf"
-#solutions = "/subiecte/COL2021_Soluții_ExA.pdf"
+problems = "/subiecte/COL2021_Subiecte_ExA.pdf"
+solutions = "/subiecte/COL2021_Soluții_ExA.pdf"
 
 [[edition.event.category]]
 type = "Exercițiu B"
-#problems = "/subiecte/COL2021_Subiecte_ExB.pdf"
-#solutions = "/subiecte/COL2021_Soluții_ExB.pdf"
+problems = "/subiecte/COL2021_Subiecte_ExB.pdf"
+solutions = "/subiecte/COL2021_Soluții_ExB.pdf"
 
 [[edition.event.category]]
 type = "Performanță"
-#problems = "/subiecte/COL2021_Subiecte_Perf.pdf"
-#solutions = "/subiecte/COL2021_Soluții_Perf.pdf"
+problems = "/subiecte/COL2021_Subiecte_Perf.pdf"
+solutions = "/subiecte/COL2021_Soluții_Perf.pdf"
 
 [[edition]]
 name = "Ediția 2019-2020"
@@ -145,18 +145,18 @@ date_end = 2020-01-18
 
 [[edition.event.category]]
 type = "Exercițiu A"
-#problems = "/subiecte/OJL2020_Subiecte_ExA.pdf"
-#solutions = "/subiecte/OJL2020_Soluții_ExA.pdf"
+problems = "/subiecte/OJL2020_Subiecte_ExA.pdf"
+solutions = "/subiecte/OJL2020_Soluții_ExA.pdf"
 
 [[edition.event.category]]
 type = "Exercițiu B"
-#problems = "/subiecte/OJL2020_Subiecte_ExB.pdf"
-#solutions = "/subiecte/OJL2020_Soluții_ExB.pdf"
+problems = "/subiecte/OJL2020_Subiecte_ExB.pdf"
+solutions = "/subiecte/OJL2020_Soluții_ExB.pdf"
 
 [[edition.event.category]]
 type = "Performanță"
-#problems = "/subiecte/OJL2020_Subiecte_Perf.pdf"
-#solutions = "/subiecte/OJL2020_Soluții_Perf.pdf"
+problems = "/subiecte/OJL2020_Subiecte_Perf.pdf"
+solutions = "/subiecte/OJL2020_Soluții_Perf.pdf"
 
 [[edition.event]]
 type = "Concursul Online de Lingvistică"
@@ -165,8 +165,8 @@ date_end = 2020-05-30
 
 [[edition.event.category]]
 type = "Toate secțiunile"
-#problems = "/subiecte/COL2020_Subiecte.pdf"
-#solutions = "/subiecte/COL2020_Soluții.pdf"
+problems = "/subiecte/COL2020_Subiecte.pdf"
+solutions = "/subiecte/COL2020_Soluții.pdf"
 
 [[edition]]
 name = "Ediția 2018-2019"
@@ -179,18 +179,18 @@ date_end = 2019-02-17
 
 [[edition.event.category]]
 type = "Exercițiu A"
-#problems = "/subiecte/OJL2019_Subiecte_ExA.pdf"
-#solutions = "/subiecte/OJL2019_Soluții_ExA.pdf"
+problems = "/subiecte/OJL2019_Subiecte_ExA.pdf"
+solutions = "/subiecte/OJL2019_Soluții_ExA.pdf"
 
 [[edition.event.category]]
 type = "Exercițiu B"
-#problems = "/subiecte/OJL2019_Subiecte_ExB.pdf"
-#solutions = "/subiecte/OJL2019_Soluții_ExB.pdf"
+problems = "/subiecte/OJL2019_Subiecte_ExB.pdf"
+solutions = "/subiecte/OJL2019_Soluții_ExB.pdf"
 
 [[edition.event.category]]
 type = "Performanță"
-#problems = "/subiecte/OJL2019_Subiecte_Perf.pdf"
-#solutions = "/subiecte/OJL2019_Soluții_Perf.pdf"
+problems = "/subiecte/OJL2019_Subiecte_Perf.pdf"
+solutions = "/subiecte/OJL2019_Soluții_Perf.pdf"
 
 [[edition.event]]
 type = "Etapa Națională"
@@ -199,17 +199,17 @@ date_end = 2019-05-10
 
 [[edition.event.category]]
 type = "Exercițiu A"
-#problems = "/subiecte/ONL2019_Subiecte_ExA.pdf"
+problems = "/subiecte/ONL2019_Subiecte_ExA.pdf"
 #solutions = "/subiecte/ONL2019_Soluții_ExA.pdf"
 
 [[edition.event.category]]
 type = "Exercițiu B"
-#problems = "/subiecte/ONL2019_Subiecte_ExB.pdf"
+problems = "/subiecte/ONL2019_Subiecte_ExB.pdf"
 #solutions = "/subiecte/ONL2019_Soluții_ExB.pdf"
 
 [[edition.event.category]]
 type = "Performanță"
-#problems = "/subiecte/ONL2019_Subiecte_Perf.pdf"
+problems = "/subiecte/ONL2019_Subiecte_Perf.pdf"
 #solutions = "/subiecte/ONL2019_Soluții_Perf.pdf"
 
 [[edition]]
@@ -223,18 +223,18 @@ date_end = 2018-01-27
 
 [[edition.event.category]]
 type = "Exercițiu A"
-#problems = "/subiecte/OJL2018_Subiecte_ExA.pdf"
-#solutions = "/subiecte/OJL2018_Soluții_ExA.pdf"
+problems = "/subiecte/OJL2018_Subiecte_ExA.pdf"
+solutions = "/subiecte/OJL2018_Soluții_ExA.pdf"
 
 [[edition.event.category]]
 type = "Exercițiu B"
-#problems = "/subiecte/OJL2018_Subiecte_ExB.pdf"
-#solutions = "/subiecte/OJL2018_Soluții_ExB.pdf"
+problems = "/subiecte/OJL2018_Subiecte_ExB.pdf"
+solutions = "/subiecte/OJL2018_Soluții_ExB.pdf"
 
 [[edition.event.category]]
 type = "Performanță"
-#problems = "/subiecte/OJL2018_Subiecte_Perf.pdf"
-#solutions = "/subiecte/OJL2018_Soluții_Perf.pdf"
+problems = "/subiecte/OJL2018_Subiecte_Perf.pdf"
+solutions = "/subiecte/OJL2018_Soluții_Perf.pdf"
 
 [[edition.event]]
 type = "Etapa Națională"
@@ -243,17 +243,17 @@ date_end = 2018-05-13
 
 [[edition.event.category]]
 type = "Exercițiu A"
-#problems = "/subiecte/ONL2018_Subiecte_ExA.pdf"
+problems = "/subiecte/ONL2018_Subiecte_ExA.pdf"
 #solutions = "/subiecte/ONL2018_Soluții_ExA.pdf"
 
 [[edition.event.category]]
 type = "Exercițiu B"
-#problems = "/subiecte/ONL2018_Subiecte_ExB.pdf"
+problems = "/subiecte/ONL2018_Subiecte_ExB.pdf"
 #solutions = "/subiecte/ONL2018_Soluții_ExB.pdf"
 
 [[edition.event.category]]
 type = "Performanță"
-#problems = "/subiecte/ONL2018_Subiecte_Perf.pdf"
+problems = "/subiecte/ONL2018_Subiecte_Perf.pdf"
 #solutions = "/subiecte/ONL2018_Soluții_Perf.pdf"
 
 [[edition]]
@@ -266,19 +266,14 @@ date_start = 2017-01-21
 date_end = 2017-01-21
 
 [[edition.event.category]]
-type = "Exercițiu A"
-#problems = "/subiecte/OJL2017_Subiecte_ExA.pdf"
-#solutions = "/subiecte/OJL2017_Soluții_ExA.pdf"
-
-[[edition.event.category]]
-type = "Exercițiu B"
-#problems = "/subiecte/OJL2017_Subiecte_ExB.pdf"
-#solutions = "/subiecte/OJL2017_Soluții_ExB.pdf"
+type = "Exercițiu"
+problems = "/subiecte/OJL2017_Subiecte_Ex.pdf"
+solutions = "/subiecte/OJL2017_Soluții_Ex.pdf"
 
 [[edition.event.category]]
 type = "Performanță"
-#problems = "/subiecte/OJL2017_Subiecte_Perf.pdf"
-#solutions = "/subiecte/OJL2017_Soluții_Perf.pdf"
+problems = "/subiecte/OJL2017_Subiecte_Perf.pdf"
+solutions = "/subiecte/OJL2017_Soluții_Perf.pdf"
 
 [[edition.event]]
 type = "Etapa Națională"
@@ -286,18 +281,13 @@ date_start = 2017-05-12
 date_end = 2017-05-14
 
 [[edition.event.category]]
-type = "Exercițiu A"
-#problems = "/subiecte/ONL2017_Subiecte_ExA.pdf"
-#solutions = "/subiecte/ONL2017_Soluții_ExA.pdf"
-
-[[edition.event.category]]
-type = "Exercițiu B"
-#problems = "/subiecte/ONL2017_Subiecte_ExB.pdf"
-#solutions = "/subiecte/ONL2017_Soluții_ExB.pdf"
+type = "Exercițiu"
+problems = "/subiecte/ONL2017_Subiecte_Ex.pdf"
+#solutions = "/subiecte/ONL2017_Soluții_Ex.pdf"
 
 [[edition.event.category]]
 type = "Performanță"
-#problems = "/subiecte/ONL2017_Subiecte_Perf.pdf"
+problems = "/subiecte/ONL2017_Subiecte_Perf.pdf"
 #solutions = "/subiecte/ONL2017_Soluții_Perf.pdf"
 
 [[edition]]
@@ -310,19 +300,9 @@ type = "Etapa Județeană"
 #date_end = decembrie 2015
 
 [[edition.event.category]]
-type = "Exercițiu A"
-#problems = "/subiecte/OJL2016_Subiecte_ExA.pdf"
-#solutions = "/subiecte/OJL2016_Soluții_ExA.pdf"
-
-[[edition.event.category]]
-type = "Exercițiu B"
-#problems = "/subiecte/OJL2016_Subiecte_ExB.pdf"
-#solutions = "/subiecte/OJL2016_Soluții_ExB.pdf"
-
-[[edition.event.category]]
-type = "Performanță"
-#problems = "/subiecte/OJL2016_Subiecte_Perf.pdf"
-#solutions = "/subiecte/OJL2016_Soluții_Perf.pdf"
+type = "Toate secțiunile"
+problems = "/subiecte/OJL2016_Subiecte.pdf"
+solutions = "/subiecte/OJL2016_Soluții.pdf"
 
 [[edition.event]]
 type = "Etapa Națională"
@@ -330,19 +310,9 @@ type = "Etapa Națională"
 #date_end = mai 2016
 
 [[edition.event.category]]
-type = "Exercițiu A"
-#problems = "/subiecte/ONL2016_Subiecte_ExA.pdf"
-#solutions = "/subiecte/ONL2016_Soluții_ExA.pdf"
-
-[[edition.event.category]]
-type = "Exercițiu B"
-#problems = "/subiecte/ONL2016_Subiecte_ExB.pdf"
-#solutions = "/subiecte/ONL2016_Soluții_ExB.pdf"
-
-[[edition.event.category]]
-type = "Performanță"
-#problems = "/subiecte/ONL2016_Subiecte_Perf.pdf"
-#solutions = "/subiecte/ONL2016_Soluții_Perf.pdf"
+type = "Toate secțiunile"
+problems = "/subiecte/ONL2016_Subiecte.pdf"
+solutions = "/subiecte/ONL2016_Soluții.pdf"
 
 [[edition]]
 name = "Ediția 2014-2015"
@@ -355,13 +325,32 @@ date_end = 2015-03-16
 
 [[edition.event.category]]
 type = "Gimnaziu"
-#problems = "/subiecte/ONL2015_Subiecte_Gimnaziu.pdf"
-#solutions = "/subiecte/ONL2015_Soluții_Gimnaziu.pdf"
+problems = "/subiecte/ONL2015_Subiecte_Gimnaziu.pdf"
+solutions = "/subiecte/ONL2015_Soluții_Gimnaziu.pdf"
 
 [[edition.event.category]]
 type = "Liceu"
-#problems = "/subiecte/ONL2015_Subiecte_Liceu.pdf"
-#solutions = "/subiecte/ONL2015_Soluții_Liceu.pdf"
+problems = "/subiecte/ONL2015_Subiecte_Liceu.pdf"
+solutions = "/subiecte/ONL2015_Soluții_Liceu.pdf"
+
+[[edition]]
+name = "Ediția 2013-2014"
+year = 2014
+
+[[edition.event]]
+type = "Etapa Națională"
+date_start = 2014-05-16
+date_end = 2014-05-18
+
+[[edition.event.category]]
+type = "Gimnaziu"
+problems = "/subiecte/ONL2014_Subiecte_Gimnaziu.pdf"
+#solutions = "/subiecte/ONL2014_Soluții_Gimnaziu.pdf"
+
+[[edition.event.category]]
+type = "Liceu"
+problems = "/subiecte/ONL2014_Subiecte_Liceu.pdf"
+#solutions = "/subiecte/ONL2014_Soluții_Liceu.pdf"
 
 [[edition]]
 name = "Ediția 2012-2013"
@@ -374,10 +363,10 @@ date_end = 2013-03-31
 
 [[edition.event.category]]
 type = "Gimnaziu"
-#problems = "/subiecte/ONL2013_Subiecte_Gimnaziu.pdf"
+problems = "/subiecte/ONL2013_Subiecte_Gimnaziu.pdf"
 #solutions = "/subiecte/ONL2013_Soluții_Gimnaziu.pdf"
 
 [[edition.event.category]]
 type = "Liceu"
-#problems = "/subiecte/ONL2013_Subiecte_Liceu.pdf"
+problems = "/subiecte/ONL2013_Subiecte_Liceu.pdf"
 #solutions = "/subiecte/ONL2013_Soluții_Liceu.pdf"
