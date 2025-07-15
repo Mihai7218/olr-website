@@ -3,6 +3,7 @@ title = "Despre"
 date=2024-10-13
 +++
 
+<!--
 ## Istoria olimpiadei
 
 
@@ -15,6 +16,7 @@ Duis sit amet urna dui. Morbi id ligula ornare, hendrerit risus nec, venenatis e
 Vestibulum ac malesuada enim. Nam consequat fermentum eros. Maecenas convallis efficitur justo, sed consectetur dolor iaculis vitae. Vestibulum tincidunt purus non neque tempus ultrices. Nunc eget congue odio. Nunc in mollis dui. Nam vehicula porttitor hendrerit. Curabitur at purus ultricies, porta velit nec, porta tortor. Ut eget diam in turpis lobortis semper id et nibh.
 
 In euismod vitae dolor scelerisque consequat. In ut pulvinar lacus, a pellentesque nisl. Nulla magna nisi, fringilla nec eleifend quis, dapibus id metus. Fusce at odio ut erat consectetur molestie. Curabitur vitae dictum felis. Mauris turpis tellus, cursus eget velit quis, scelerisque volutpat lacus. Vestibulum et eros mattis, eleifend nibh vel, eleifend elit. 
+-->
 
 ## Regulament
 
@@ -23,9 +25,8 @@ In euismod vitae dolor scelerisque consequat. In ut pulvinar lacus, a pellentesq
 
 ## Înscrieri
 
-### Pentru elevi
-
 #### Procedură
+Înscrierea se face prin intermediul inspectoratelor școlare județene/al Municipiului București. Informațiile cu privire la desfășurarea probelor vor fi transmise unităților de învățământ prin intermediul inspectoratelor.
 
 #### Criterii de eligibilitate 
 Pot participa toți elevii înmatriculați la unități de învățământ din România. Olimpiada cuprinde două secțiuni:
@@ -34,4 +35,3 @@ Pot participa toți elevii înmatriculați la unități de învățământ din R
     - categoria B: elevii din clasele VII-VIII.
 - secţiunea de PERFORMANŢĂ – pentru elevii din învățământul secundar superior (clasele IX – XII).
 
-### Pentru profesori
