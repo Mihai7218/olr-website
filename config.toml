@@ -1,4 +1,5 @@
-title = "Olimpiada de Lingvistică din România"
+title = "OLR"
+description = "Olimpiada de Lingvistică din România"
 default_language="ro"
 
 # The URL the site will be built for
@@ -10,6 +11,8 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 
 theme = "duckquill"
+
+taxonomies = [{ name = "tags", feed = false }]
 
 [markdown]
 # Whether to do syntax highlighting
@@ -39,8 +42,10 @@ links = [
     {url = "/despre#regulament", name = "Regulament"},
     {url = "/despre#inscrieri", name = "Înscriere"}
   ]},
+  {url = "/blog", name = "Articole"},
   {url = "/resurse", name = "Resurse"},
 ]
+
 
 [extra.footer]
 show_powered_by = true
