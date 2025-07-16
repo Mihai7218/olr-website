@@ -364,9 +364,9 @@ date_end = 2013-03-31
 [[edition.event.category]]
 type = "Gimnaziu"
 problems = "/subiecte/ONL2013_Subiecte_Gimnaziu.pdf"
-#solutions = "/subiecte/ONL2013_Soluții_Gimnaziu.pdf"
+solutions = "/subiecte/ONL2013_Soluții_Gimnaziu.pdf"
 
 [[edition.event.category]]
 type = "Liceu"
 problems = "/subiecte/ONL2013_Subiecte_Liceu.pdf"
-#solutions = "/subiecte/ONL2013_Soluții_Liceu.pdf"
+solutions = "/subiecte/ONL2013_Soluții_Liceu.pdf"
