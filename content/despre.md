@@ -20,8 +20,8 @@ In euismod vitae dolor scelerisque consequat. In ut pulvinar lacus, a pellentesq
 
 ## Regulament
 
-{{pdfviewer(data="/regulament-2025.pdf")}}
-
+<!-- {{pdfviewer(data="/regulament-2025.pdf")}} -->
+<iframe src="https://drive.google.com/file/d/1X3kOLRRiM9MYHhWqMJopWpmcRK2o8Sii/preview" width="640" height="900" allow="autoplay"></iframe>
 
 ## Înscrieri
 
