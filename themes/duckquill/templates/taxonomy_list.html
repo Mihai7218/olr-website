@@ -5,7 +5,16 @@
 <h1>{{ macros_translate::translate(key="tags_title", default="Tags", language_strings=language_strings) }}</h1>
 
 <p>
-	<small>{{ macros_translate::translate(key="tags", number=number_of_tags, default="$NUMBER tags", language_strings=language_strings) }}</small>
+
+	<small>
+		{%- if number_of_tags == 1 %}
+        {{ macros_translate::translate(key="one_tags", default="one post", language_strings=language_strings) }}
+        {%- elif number_of_tags < 20 %} 
+        {{ macros_translate::translate(key="tags", number=number_of_tags, default="$NUMBER tags", language_strings=language_strings) }}
+        {%- else %}
+		{{ macros_translate::translate(key="many_tags", number=number_of_tags, default="$NUMBER tags", language_strings=language_strings) }}
+        {%- endif %}
+    </small>
 </p>
 
 <ul class="tags">
