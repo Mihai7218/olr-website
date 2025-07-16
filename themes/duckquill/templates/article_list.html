@@ -22,7 +22,13 @@
 			</a>
 			<br />
 		{%- endif %}
-		{{ macros_translate::translate(key="posts", number=number_of_posts, default="$NUMBER posts", language_strings=language_strings) }}
+        {%- if number_of_posts == 1 %}
+        {{ macros_translate::translate(key="one_posts", default="one post", language_strings=language_strings) }}
+        {%- elif number_of_posts < 20 %} 
+        {{ macros_translate::translate(key="posts", number=number_of_posts, default="$NUMBER posts", language_strings=language_strings) }}
+        {%- else %}
+		{{ macros_translate::translate(key="many_posts", number=number_of_posts, default="$NUMBER posts", language_strings=language_strings) }}
+        {%- endif %}
 	</small>
 </p>
 
