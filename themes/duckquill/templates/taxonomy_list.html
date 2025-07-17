@@ -8,11 +8,11 @@
 
 	<small>
 		{%- if number_of_tags == 1 %}
-        {{ macros_translate::translate(key="one_tags", default="one post", language_strings=language_strings) }}
+        {{ macros_translate::translate(key="one_tags", default="un filtru", language_strings=language_strings) }}
         {%- elif number_of_tags < 20 %} 
-        {{ macros_translate::translate(key="tags", number=number_of_tags, default="$NUMBER tags", language_strings=language_strings) }}
+        {{ macros_translate::translate(key="few_tags", number=number_of_tags, default="$NUMBER filtre", language_strings=language_strings) }}
         {%- else %}
-		{{ macros_translate::translate(key="many_tags", number=number_of_tags, default="$NUMBER tags", language_strings=language_strings) }}
+		{{ macros_translate::translate(key="many_tags", number=number_of_tags, default="$NUMBER de filtre", language_strings=language_strings) }}
         {%- endif %}
     </small>
 </p>
