@@ -1,4 +1,48 @@
 [[edition]]
+name = "Ediția 2024-2025"
+year = 2025
+
+[[edition.event]]
+type = "Etapa Județeană"
+date_start = 2025-02-01
+date_end = 2025-02-01
+
+[[edition.event.category]]
+type = "Exercițiu A"
+problems = "/subiecte/OJL2025_Subiecte_ExA.pdf"
+solutions = "/subiecte/OJL2025_Soluții_ExA.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu B"
+problems = "/subiecte/OJL2025_Subiecte_ExB.pdf"
+solutions = "/subiecte/OJL2025_Soluții_ExB.pdf"
+
+[[edition.event.category]]
+type = "Performanță"
+problems = "/subiecte/OJL2025_Subiecte_Perf.pdf"
+solutions = "/subiecte/OJL2025_Soluții_Perf.pdf"
+
+[[edition.event]]
+type = "Etapa Națională"
+date_start = 2025-03-28
+date_end = 2025-03-30
+
+[[edition.event.category]]
+type = "Exercițiu A"
+#problems = "/subiecte/ONL2025_Subiecte_ExA.pdf"
+#solutions = "/subiecte/ONL2025_Soluții_ExA.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu B"
+#problems = "/subiecte/ONL2025_Subiecte_ExB.pdf"
+#solutions = "/subiecte/ONL2025_Soluții_ExB.pdf"
+
+[[edition.event.category]]
+type = "Performanță"
+#problems = "/subiecte/ONL2025_Subiecte_Perf.pdf"
+#solutions = "/subiecte/ONL2025_Soluții_Perf.pdf"
+
+[[edition]]
 name = "Ediția 2023-2024"
 year = 2024
 
