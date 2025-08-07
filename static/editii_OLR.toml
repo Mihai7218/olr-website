@@ -29,18 +29,18 @@ date_end = 2025-03-30
 
 [[edition.event.category]]
 type = "Exercițiu A"
-#problems = "/subiecte/ONL2025_Subiecte_ExA.pdf"
-#solutions = "/subiecte/ONL2025_Soluții_ExA.pdf"
+problems = "/subiecte/ONL2025_Subiecte_ExA.pdf"
+solutions = "/subiecte/ONL2025_Soluții_ExA.pdf"
 
 [[edition.event.category]]
 type = "Exercițiu B"
-#problems = "/subiecte/ONL2025_Subiecte_ExB.pdf"
-#solutions = "/subiecte/ONL2025_Soluții_ExB.pdf"
+problems = "/subiecte/ONL2025_Subiecte_ExB.pdf"
+solutions = "/subiecte/ONL2025_Soluții_ExB.pdf"
 
 [[edition.event.category]]
 type = "Performanță"
-#problems = "/subiecte/ONL2025_Subiecte_Perf.pdf"
-#solutions = "/subiecte/ONL2025_Soluții_Perf.pdf"
+problems = "/subiecte/ONL2025_Subiecte_Perf.pdf"
+solutions = "/subiecte/ONL2025_Soluții_Perf.pdf"
 
 [[edition]]
 name = "Ediția 2023-2024"
