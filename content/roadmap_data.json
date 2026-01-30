@@ -2,26 +2,29 @@
     {
         "type": "contest",
         "name": "Etapa Județeană",
-        "date": "2025-02-01",
+        "date": "2026-02-06",
         "date_end": ""
     },
     {
         "type": "contest",
         "name": "Etapa Națională",
-        "date": "2025-03-28",
-        "date_end": "2025-03-30"
+        "date": "2026-03-20",
+        "date_end": "2026-03-22",
+        "other": "Sinaia, Prahova"
     },
     {
         "type": "contest",
         "name": "APLO",
-        "date": "2025-04-29",
-        "date_end": ""
+        "hide_date": true,
+        "date": "2026-03-31",
+        "other": "martie-aprilie 2026"
     },
     {
         "type": "contest",
         "name": "IOL",
-        "date": "2025-07-20",
-        "date_end": "2025-07-27"
+        "date": "2026-07-26",
+        "date_end": "2026-08-02",
+        "other": "București, România"
     }
 
 
