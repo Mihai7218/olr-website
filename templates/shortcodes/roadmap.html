@@ -18,11 +18,14 @@
                 <img class="roadmap-img no-hover transparent" src="{{ img_src }}">
             </div>
             <div class="roadmap-title">{{ event.name }}</div>
-            {%if event.date_end == ""%}
+            {%if not event.hide_date and event.date and (not event.date_end or event.date_end == "")%}
             <div class="roadmap-date">{{ event.date | date(format=language_strings.date_format, locale=language_strings.date_locale) }}</div>
             {%endif%}
-            {%if event.date_end != ""%}
+            {%if not event.hide_date and event.date_end and event.date_end != ""%}
             <div class="roadmap-date">{{ event.date | date(format=language_strings.date_format, locale=language_strings.date_locale) }} - {{ event.date_end | date(format=language_strings.date_format, locale=language_strings.date_locale) }}</div>
+            {%endif%}
+            {%if event.other and event.other != ""%}
+            <div class="roadmap-date">{{ event.other }}</div>
             {%endif%}
         </div>
         {%if event != roadmap_data | last%}
