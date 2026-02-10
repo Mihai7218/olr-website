@@ -34,7 +34,9 @@
 }
 
 .ann_content {
-    font-size: 1.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1.25rem;
 
     p {
         margin: 0;
@@ -43,6 +45,7 @@
 
 .ann_date {
     padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
     font-size: 1.25rem;
     color: var(--fg-muted-5);
     font-weight: 500;
@@ -65,7 +68,7 @@
     border-radius: var(--rounded-corner);
     border-collapse: collapse;
 
-    padding: 3.125rem 2.875rem;
+    padding: 2rem 2rem;
 
     width: min(80vw, var(--container-width));
 
@@ -126,11 +129,11 @@
 }
 
 .banner {
-    font-size: 3rem;
     text-align: center;
     margin: auto;
 
     .banner-text {
+        font-size: 2.5rem;
         font-family: var(--font-antique);
         margin: auto;
     }
