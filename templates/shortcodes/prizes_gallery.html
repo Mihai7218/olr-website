@@ -1,0 +1,35 @@
+<style>
+  .participants-info-box {
+    flex-grow: 1;
+    width: 31%;
+    min-width: 31%;
+    max-width: 31%;
+    margin: 1%;
+  }
+</style>
+
+{% set data = load_data(path=url) %}
+<div style="display: flex; flex-wrap: wrap; justify-content: center">
+  {% for item in data.participants %}
+  <div class="participants-info-box">
+    <img class="gallery-image" src="{{ item.photo|safe }}" />
+    <p style="text-align: center">
+      <strong>{{ item.name }}</strong>
+      <br />
+      {{ item.school }}
+      <br />
+      <em>
+        {% if item.award == "Medalie de aur" %}
+          <font color="#D4AF37">{{ item.award }}</font>
+        {% elif item.award == "Medalie de argint" %}
+          <font color="#C0C0C0">{{ item.award }}</font>
+        {% elif item.award == "Medalie de bronz" %}
+          <font color="#9F7A34">{{ item.award }}</font>
+        {% else %}
+          {{ item.award }}
+        {% endif %}
+      </em>
+    </p>
+  </div>
+  {% endfor %}
+</div>
