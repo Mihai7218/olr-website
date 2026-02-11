@@ -39,8 +39,8 @@ mailto = "mailto:olimpiada.lingvistica@gmail.com"
 links = [
   {url = "/despre", name = "Despre", menu = [
 #    {url = "/despre#istoria-olimpiadei", name = "Istoria Olimpiadei"},
-    {url = "/despre#regulament", name = "Regulament"},
-    {url = "/despre#inscrieri", name = "Înscriere"}
+    {url = "/despre#inscrieri", name = "Înscrieri"},
+    {url = "/despre#regulament", name = "Regulament"}
   ]},
   {url = "/blog", name = "Articole"},
   {url = "/resurse", name = "Resurse"},
