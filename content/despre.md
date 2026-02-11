@@ -18,20 +18,24 @@ Vestibulum ac malesuada enim. Nam consequat fermentum eros. Maecenas convallis e
 In euismod vitae dolor scelerisque consequat. In ut pulvinar lacus, a pellentesque nisl. Nulla magna nisi, fringilla nec eleifend quis, dapibus id metus. Fusce at odio ut erat consectetur molestie. Curabitur vitae dictum felis. Mauris turpis tellus, cursus eget velit quis, scelerisque volutpat lacus. Vestibulum et eros mattis, eleifend nibh vel, eleifend elit. 
 -->
 
-## Regulament
-
-<!-- {{pdfviewer(data="/regulament-2025.pdf")}} -->
-<iframe src="https://drive.google.com/file/d/1X3kOLRRiM9MYHhWqMJopWpmcRK2o8Sii/preview" width="640" height="900" allow="autoplay"></iframe>
-
 ## Înscrieri
 
 #### Procedură
 Înscrierea se face prin intermediul inspectoratelor școlare județene/al Municipiului București. Informațiile cu privire la desfășurarea probelor vor fi transmise unităților de învățământ prin intermediul inspectoratelor.
 
 #### Criterii de eligibilitate 
-Pot participa toți elevii înmatriculați la unități de învățământ din România. Olimpiada cuprinde două secțiuni:
-- secţiunea de EXERCIȚIU – pentru elevii din învățământul secundar inferior (clasele gimnaziale), astfel: 
-    - categoria A: elevii din clasele V-VI;
-    - categoria B: elevii din clasele VII-VIII.
-- secţiunea de PERFORMANŢĂ – pentru elevii din învățământul secundar superior (clasele IX – XII).
+Pot participa toți elevii înmatriculați la unități de învățământ din România. Olimpiada cuprinde patru niveluri, astfel:
+- secţiunea de **EXERCIȚIU** – pentru elevii din învățământul secundar inferior (clasele gimnaziale), astfel: 
+    - *EXERCIȚIU 1* – elevii din clasele a V-a și a VI-a;
+    - *EXERCIȚIU 2* – elevii din clasele a VII-a și a VIII-a;
 
+- secţiunea de **PERFORMANŢĂ** – pentru elevii din învățământul secundar superior (clasele IX – XII).
+    - *PERFORMANȚĂ 1* – elevii din clasele a IX-a și a X-a;
+    - *PERFORMANȚĂ 2* – elevii din clasele a XI-a și a XII-a.
+
+## Regulament
+
+Pentru mai multe informații, puteți consulta *Regulamentul specific privind organizarea și desfășurarea Olimpiadei de Lingvistică „Solomon Marcus”*. **Ultima actualizare: 02.02.2026.**
+
+{{pdfviewer(data="/regulament-2026.pdf")}}
+<!-- <iframe src="https://drive.google.com/file/d/1X3kOLRRiM9MYHhWqMJopWpmcRK2o8Sii/preview" width="640" height="900" allow="autoplay"></iframe> -->
