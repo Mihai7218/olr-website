@@ -115,6 +115,11 @@
 								{% else %}
 									<span class="disabled">Soluții</span>
 								{% endif %}
+						
+								{% if category.rubric %}
+									<span class="dot">·</span>
+									<a href="{{ category.rubric }}">Bareme</a>
+								{% endif %}
 							</div>
 						</div>
 					{% endfor %}

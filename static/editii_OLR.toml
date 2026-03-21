@@ -27,6 +27,31 @@ type = "Performanță 2"
 problems = "/subiecte/OJL2026_Subiecte_Perf2.pdf"
 solutions = "/subiecte/OJL2026_Soluții_Perf2.pdf"
 
+[[edition.event]]
+type = "Etapa Națională"
+date_start = 2026-03-20
+date_end = 2026-03-22
+
+[[edition.event.category]]
+type = "Exercițiu 1"
+problems = "/subiecte/ONL2026_Subiecte_Ex1.pdf"
+rubric = "/subiecte/ONL2026_Bareme_Ex1.pdf"
+
+[[edition.event.category]]
+type = "Exercițiu 2"
+problems = "/subiecte/ONL2026_Subiecte_Ex2.pdf"
+rubric = "/subiecte/ONL2026_Bareme_Ex2.pdf"
+
+[[edition.event.category]]
+type = "Performanță 1"
+problems = "/subiecte/ONL2026_Subiecte_Perf1.pdf"
+rubric = "/subiecte/ONL2026_Bareme_Perf1.pdf"
+
+[[edition.event.category]]
+type = "Performanță 2"
+problems = "/subiecte/ONL2026_Subiecte_Perf2.pdf"
+rubric = "/subiecte/ONL2026_Bareme_Perf2.pdf"
+
 [[edition]]
 name = "Ediția 2024-2025"
 year = 2025
